@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_nightshadegrove_wood": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "beyond-horizons:nightshadegrove_wood"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:nightshadegrove_wood_from_smelting_nightshadegrove_wood"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_nightshadegrove_wood"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:nightshadegrove_wood_from_smelting_nightshadegrove_wood"
+    ]
+  },
+  "sends_telemetry_event": false
+}

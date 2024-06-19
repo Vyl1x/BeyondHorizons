@@ -1,0 +1,61 @@
+{
+	"schemaVersion": 1,
+	"id": "beyond-horizons",
+	"version": "Beta-0.1.0-[Fabric-1.20.2]",
+	"name": "Beyond Horizons",
+	"description": "This mod enhances gameplay in another way to make it more interesting and fun to play. There are new trees, ores, etc.",
+
+	"authors": [
+		"[Owner] Vyl1x,  [Contributor] Bonew, [Tester] Kriya;"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/beyond-horizons/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.beyond_horizons.BeyondHorizons"
+		],
+		"client": [
+			"net.beyond_horizons.BeyondHorizonsClient"
+		],
+		"fabric-datagen": [
+			"net.beyond_horizons.BeyondHorizonsModDataGenerator"
+		],
+		"server": [
+			"net.beyond_horizons.BeyondHorizonsServer"
+		],
+		"modmenu": [
+			"net.beyond_horizons.config.ModMenuIntegration"
+		],
+		"terrablender": [
+			"net.beyond_horizons.world.biome.ModTerrablenderAPI"
+		]
+	},
+	"mixins": [
+		"beyond-horizons.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"cloth-config": ">=12.0.109",
+		"terrablender": ">=3.0.0.170",
+		"fabric-api": "*"
+	},
+	"recommends": {
+		"modmenu": ">=8.0.0"
+	},
+	"custom": {
+		"modmenu": {
+			"configScreen": "beyond-horizons.gui.ModConfigScreen::new",
+			"update_checker": false
+		}
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

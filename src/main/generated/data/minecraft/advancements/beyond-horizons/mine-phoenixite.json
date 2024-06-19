@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:beyond-horizons/ores",
+  "criteria": {
+    "mine-phoenixite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "beyond-horizons:phoenixite_scrap"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "The fire power is almost yours"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "beyond-horizons:celestite_ore"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Phoenixite Ore"
+    }
+  },
+  "requirements": [
+    [
+      "mine-phoenixite"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

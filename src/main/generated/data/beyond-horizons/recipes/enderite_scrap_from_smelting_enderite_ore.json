@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 2.0,
+  "group": "enderite",
+  "ingredient": {
+    "item": "beyond-horizons:enderite_ore"
+  },
+  "result": "beyond-horizons:enderite_scrap"
+}

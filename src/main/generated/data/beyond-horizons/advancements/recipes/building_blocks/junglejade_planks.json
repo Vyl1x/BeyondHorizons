@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_junglejade_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "beyond-horizons:junglejade_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:junglejade_planks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_junglejade_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:junglejade_planks"
+    ]
+  },
+  "sends_telemetry_event": false
+}

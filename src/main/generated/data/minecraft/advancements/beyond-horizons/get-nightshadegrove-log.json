@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:beyond-horizons/get-logs",
+  "criteria": {
+    "get-nightshadegrove-log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "beyond-horizons:nightshadegrove_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "The logs come first!!"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "beyond-horizons:nightshadegrove_log"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Night Groves trough your heart from collecting that Nightshade Grove log"
+    }
+  },
+  "requirements": [
+    [
+      "get-nightshadegrove-log"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

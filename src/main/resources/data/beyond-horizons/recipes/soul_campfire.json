@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "beyond-horizons:logs"
+    },
+    "x": {
+      "item": "minecraft:stick"
+    },
+    "o": {
+      "item": "minecraft:soul_soil"
+    }
+  },
+  "pattern": [
+    " x ",
+    "xox",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "item": "minecraft:soul_campfire"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "beyond-horizons:block/shadowonyxbloodflame_planks",
+    "side": "beyond-horizons:block/shadowonyxbloodflame_planks",
+    "top": "beyond-horizons:block/shadowonyxbloodflame_planks"
+  }
+}

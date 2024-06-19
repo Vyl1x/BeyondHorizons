@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "beyond-horizons:enderite_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_boots"
+  },
+  "result": {
+    "item": "beyond-horizons:enderite_boots"
+  },
+  "template": {
+    "item": "beyond-horizons:dimensional_template"
+  }
+}

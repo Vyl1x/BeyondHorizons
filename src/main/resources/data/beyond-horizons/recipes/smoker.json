@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "beyond-horizons:logs"
+    },
+    "x": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#x#",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "item": "minecraft:smoker"
+  },
+  "show_notification": true
+}

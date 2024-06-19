@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "beyond-horizons:block/crystalaspen_planks",
+    "side": "beyond-horizons:block/crystalaspen_planks",
+    "top": "beyond-horizons:block/crystalaspen_planks"
+  }
+}

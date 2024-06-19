@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:beyond-horizons/get-logs",
+  "criteria": {
+    "get-crystalaspen-log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "beyond-horizons:crystalaspen_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "The logs come first!!"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "beyond-horizons:crystalaspen_log"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Adventures with cold and crystals to Crystal Aspen log is yours"
+    }
+  },
+  "requirements": [
+    [
+      "get-crystalaspen-log"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

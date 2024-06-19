@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_darkfire_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "beyond-horizons:darkfire_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:darkfire_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_darkfire_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:darkfire_door"
+    ]
+  },
+  "sends_telemetry_event": false
+}

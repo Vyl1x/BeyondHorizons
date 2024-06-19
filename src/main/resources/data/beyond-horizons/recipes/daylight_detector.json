@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "tag": "beyond-horizons:slabs"
+    },
+    "x": {
+      "item": "minecraft:quartz"
+    },
+    "g": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    "ggg",
+    "xxx",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "item": "minecraft:daylight_detector"
+  },
+  "show_notification": true
+}

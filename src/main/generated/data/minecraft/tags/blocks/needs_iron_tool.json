@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "beyond-horizons:enderite_coal_block",
+    "beyond-horizons:cobalt_block",
+    "beyond-horizons:enderite_coal_ore",
+    "beyond-horizons:cobalt_ore",
+    "beyond-horizons:deepslate_cobalt_ore"
+  ]
+}

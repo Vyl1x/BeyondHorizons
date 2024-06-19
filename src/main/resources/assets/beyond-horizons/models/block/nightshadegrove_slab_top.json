@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "beyond-horizons:block/nightshadegrove_planks",
+    "side": "beyond-horizons:block/nightshadegrove_planks",
+    "top": "beyond-horizons:block/nightshadegrove_planks"
+  }
+}

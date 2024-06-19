@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "beyond-horizons:block/darkfire_slab"
+    },
+    "type=double": {
+      "model": "beyond-horizons:block/darkfire_planks"
+    },
+    "type=top": {
+      "model": "beyond-horizons:block/darkfire_slab_top"
+    }
+  }
+}

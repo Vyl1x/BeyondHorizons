@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "beyond-horizons:ruby"
+    },
+    "x": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "##",
+    "#x",
+    " x"
+  ],
+  "result": {
+    "item": "beyond-horizons:ruby_axe"
+  },
+  "show_notification": true
+}

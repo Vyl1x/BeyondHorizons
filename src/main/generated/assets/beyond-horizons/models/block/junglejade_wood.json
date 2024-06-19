@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "beyond-horizons:block/junglejade_log",
+    "side": "beyond-horizons:block/junglejade_log"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "parent": "minecraft:beyond-horizonsbeyond-horizons",
+  "criteria": {
+    "get-logs": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "beyond-horizons:darkfire_log"
+            ]
+          },
+          {
+            "items": [
+              "beyond-horizons:nightshadegrove_log"
+            ]
+          },
+          {
+            "items": [
+              "beyond-horizons:crystalaspen_log"
+            ]
+          },
+          {
+            "items": [
+              "beyond-horizons:junglejade_log"
+            ]
+          },
+          {
+            "items": [
+              "beyond-horizons:shadowonyxbloodflame_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "The logs come first!!"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "beyond-horizons:darkfire_log"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Collect all types of Logs"
+    }
+  },
+  "requirements": [
+    [
+      "get-logs"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

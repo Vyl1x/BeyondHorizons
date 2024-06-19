@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "beyond-horizons:block/nightshadegrove_planks"
+  }
+}

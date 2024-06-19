@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "beyond-horizons:planks"
+    },
+    "x": {
+      "item": "minecraft:stone_slab"
+    },
+    "o": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "oxo",
+    "# #"
+  ],
+  "result": {
+    "count": 1,
+    "item": "minecraft:grindstone"
+  },
+  "show_notification": true
+}

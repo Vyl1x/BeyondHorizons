@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "beyond-horizons:slabs"
+    },
+    "x": {
+      "item": "minecraft:bookshelf"
+    }
+  },
+  "pattern": [
+    "###",
+    " x ",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "item": "minecraft:lectern"
+  },
+  "show_notification": true
+}

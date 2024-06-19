@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "beyond-horizons:block/nightshadegrove_slab"
+    },
+    "type=double": {
+      "model": "beyond-horizons:block/nightshadegrove_planks"
+    },
+    "type=top": {
+      "model": "beyond-horizons:block/nightshadegrove_slab_top"
+    }
+  }
+}

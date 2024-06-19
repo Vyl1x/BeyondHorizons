@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=true": { "model": "beyond-horizons:block/crystal_lamp_lit" },
+    "lit=false": { "model": "beyond-horizons:block/crystal_lamp" }
+  }
+}

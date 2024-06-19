@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:emerald_block"
+    },
+    "o": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "x": {
+      "item": "minecraft:gold_block"
+    }
+  },
+  "pattern": [
+    "#o#",
+    "xxx",
+    " x "
+  ],
+  "result": {
+    "item": "beyond-horizons:amulet_of_the_cat"
+  },
+  "show_notification": true
+}

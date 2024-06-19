@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "beyond-horizons:block/nightshadegrove_log_top",
+    "side": "beyond-horizons:block/nightshadegrove_log"
+  }
+}

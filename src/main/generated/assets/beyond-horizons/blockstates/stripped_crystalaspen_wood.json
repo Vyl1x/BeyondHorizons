@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "beyond-horizons:block/stripped_crystalaspen_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "beyond-horizons:block/stripped_crystalaspen_wood"
+    },
+    "axis=z": {
+      "model": "beyond-horizons:block/stripped_crystalaspen_wood",
+      "x": 90
+    }
+  }
+}

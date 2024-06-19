@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "beyond-horizons:block/shadowonyxbloodflame_slab"
+    },
+    "type=double": {
+      "model": "beyond-horizons:block/shadowonyxbloodflame_planks"
+    },
+    "type=top": {
+      "model": "beyond-horizons:block/shadowonyxbloodflame_slab_top"
+    }
+  }
+}

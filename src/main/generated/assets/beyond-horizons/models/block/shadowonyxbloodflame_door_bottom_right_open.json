@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right_open",
+  "textures": {
+    "bottom": "beyond-horizons:block/shadowonyxbloodflame_door_bottom",
+    "top": "beyond-horizons:block/shadowonyxbloodflame_door_top"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "parent": "minecraft:beyond-horizons/mine-ruby",
+  "criteria": {
+    "first-ruby-pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "beyond-horizons:ruby_pickaxe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "The faster you go the better!!"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "beyond-horizons:ruby_pickaxe",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Get your first Ruby Pickaxe"
+    }
+  },
+  "requirements": [
+    [
+      "first-ruby-pickaxe"
+    ]
+  ],
+  "rewards": {
+    "experience": 25
+  },
+  "sends_telemetry_event": true
+}

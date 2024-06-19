@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "beyond-horizons:junglejade_planks"
+    }
+  ],
+  "result": {
+    "item": "beyond-horizons:junglejade_button"
+  }
+}

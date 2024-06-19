@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "beyond-horizons:block/junglejade_planks",
+    "side": "beyond-horizons:block/junglejade_planks",
+    "top": "beyond-horizons:block/junglejade_planks"
+  }
+}

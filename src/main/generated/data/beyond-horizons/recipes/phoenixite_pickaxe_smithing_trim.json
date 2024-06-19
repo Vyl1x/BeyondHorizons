@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "beyond-horizons:phoenixite_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_pickaxe"
+  },
+  "result": {
+    "item": "beyond-horizons:phoenixite_pickaxe"
+  },
+  "template": {
+    "item": "beyond-horizons:dimensional_template"
+  }
+}

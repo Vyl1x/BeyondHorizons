@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "beyond-horizons:block/junglejade_slab"
+    },
+    "type=double": {
+      "model": "beyond-horizons:block/junglejade_planks"
+    },
+    "type=top": {
+      "model": "beyond-horizons:block/junglejade_slab_top"
+    }
+  }
+}

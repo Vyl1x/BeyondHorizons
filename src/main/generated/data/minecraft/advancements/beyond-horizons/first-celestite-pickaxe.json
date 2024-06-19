@@ -1,0 +1,42 @@
+{
+  "parent": "minecraft:beyond-horizons/smelt-celestite",
+  "criteria": {
+    "first-/-pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "beyond-horizons:celestite_pickaxe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "THIS IS CELESTIALLL!!!!!"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "beyond-horizons:celestite_pickaxe",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Get your first Celestite Pickaxe"
+    }
+  },
+  "requirements": [
+    [
+      "first-/-pickaxe"
+    ]
+  ],
+  "rewards": {
+    "experience": 75
+  },
+  "sends_telemetry_event": true
+}

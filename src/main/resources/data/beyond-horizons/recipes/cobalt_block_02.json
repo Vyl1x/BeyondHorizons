@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "beyond-horizons:cobalt_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "beyond-horizons:cobalt_ingot"
+  }
+}

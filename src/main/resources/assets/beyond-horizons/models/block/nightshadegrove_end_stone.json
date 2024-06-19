@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "top": "beyond-horizons:block/nightshadegrove_end_stone_top",
+    "bottom": "minecraft:block/end_stone",
+    "side": "beyond-horizons:block/nightshadegrove_end_stone"
+  }
+}

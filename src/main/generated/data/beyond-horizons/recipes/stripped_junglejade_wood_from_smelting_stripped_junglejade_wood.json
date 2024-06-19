@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.15,
+  "group": "junglejade_wood_stripped",
+  "ingredient": {
+    "item": "beyond-horizons:stripped_junglejade_wood"
+  },
+  "result": "beyond-horizons:stripped_junglejade_wood"
+}

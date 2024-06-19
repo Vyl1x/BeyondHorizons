@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "beyond-horizons:celestite_ingot"
+    },
+    "e": {
+      "item": "minecraft:emerald_block"
+    }
+  },
+  "pattern": [
+    "#e#",
+    "#e#",
+    "###"
+  ],
+  "result": {
+    "item": "beyond-horizons:dimensional_template"
+  },
+  "show_notification": true
+}

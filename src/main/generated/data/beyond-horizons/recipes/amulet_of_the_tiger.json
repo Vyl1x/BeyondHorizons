@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "beyond-horizons:ruby_block"
+    },
+    "o": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "x": {
+      "item": "minecraft:gold_block"
+    }
+  },
+  "pattern": [
+    "#o#",
+    "xxx",
+    " x "
+  ],
+  "result": {
+    "item": "beyond-horizons:amulet_of_the_tiger"
+  },
+  "show_notification": true
+}

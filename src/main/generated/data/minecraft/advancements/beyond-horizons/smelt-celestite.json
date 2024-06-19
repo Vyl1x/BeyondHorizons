@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:beyond-horizons/mine-celestite",
+  "criteria": {
+    "smelt-celestite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "beyond-horizons:celestite_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "The Celestite power is yours"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "beyond-horizons:raw_celestite"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Celestite"
+    }
+  },
+  "requirements": [
+    [
+      "smelt-celestite"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

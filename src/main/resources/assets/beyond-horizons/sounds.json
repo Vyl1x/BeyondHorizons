@@ -1,0 +1,42 @@
+{
+  "tiger_roar": {
+    "sounds": [
+      {
+        "name": "beyond-horizons:tiger_roar",
+        "stream": false
+      }
+    ]
+  },
+  "tiger_walk": {
+    "sounds": [
+      {
+        "name": "beyond-horizons:tiger_walk",
+        "stream": false
+      }
+    ]
+  },
+  "dragon_roar": {
+    "sounds": [
+      {
+        "name": "beyond-horizons:dragon_roar",
+        "stream": false
+      }
+    ]
+  },
+  "dragon_wings": {
+    "sounds": [
+      {
+        "name": "beyond-horizons:dragon_wings",
+        "stream": false
+      }
+    ]
+  },
+  "dragon_walk": {
+    "sounds": [
+      {
+        "name": "beyond-horizons:dragon_walk",
+        "stream": false
+      }
+    ]
+  }
+}

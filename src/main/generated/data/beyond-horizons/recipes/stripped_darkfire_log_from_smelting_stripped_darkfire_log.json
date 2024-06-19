@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.15,
+  "group": "darkfire_stripped",
+  "ingredient": {
+    "item": "beyond-horizons:stripped_darkfire_log"
+  },
+  "result": "beyond-horizons:stripped_darkfire_log"
+}

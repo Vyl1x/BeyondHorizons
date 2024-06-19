@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:beyond-horizons/ores",
+  "criteria": {
+    "mine-cobalt": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "beyond-horizons:cobalt_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "The power of the Crystal is coming to you"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "beyond-horizons:cobalt_ore"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Cobalt Ore"
+    }
+  },
+  "requirements": [
+    [
+      "mine-cobalt"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

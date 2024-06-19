@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "beyond-horizons:block/crystalaspen_leaves"
+  }
+}

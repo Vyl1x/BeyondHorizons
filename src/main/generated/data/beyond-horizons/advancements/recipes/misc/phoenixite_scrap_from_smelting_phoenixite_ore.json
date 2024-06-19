@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_phoenixite_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "beyond-horizons:phoenixite_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:phoenixite_scrap_from_smelting_phoenixite_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_phoenixite_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:phoenixite_scrap_from_smelting_phoenixite_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

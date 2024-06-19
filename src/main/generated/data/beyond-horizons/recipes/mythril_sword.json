@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "beyond-horizons:mythril_ingot"
+    },
+    "x": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#",
+    "#",
+    "x"
+  ],
+  "result": {
+    "item": "beyond-horizons:mythril_sword"
+  },
+  "show_notification": true
+}
