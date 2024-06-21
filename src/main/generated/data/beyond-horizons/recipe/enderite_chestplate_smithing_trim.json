@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "beyond-horizons:enderite_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_chestplate"
+  },
+  "result": {
+    "count": 1,
+    "id": "beyond-horizons:enderite_chestplate"
+  },
+  "template": {
+    "item": "beyond-horizons:dimensional_template"
+  }
+}

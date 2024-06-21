@@ -13,11 +13,11 @@ public class ModStatusEffects {
     public static StatusEffect EFFECT_OF_THE_TIGER;
 
     public static StatusEffect registerEffectofCats(String name){
-        return Registry.register(Registries.STATUS_EFFECT, new Identifier(BeyondHorizons.MOD_ID, name),
+        return Registry.register(Registries.STATUS_EFFECT, Identifier.of(BeyondHorizons.MOD_ID, name),
                 new EffectOfTheCat(StatusEffectCategory.NEUTRAL, 16753920));
     }
     public static StatusEffect registerEffectofTiger(String name){
-        return Registry.register(Registries.STATUS_EFFECT, new Identifier(BeyondHorizons.MOD_ID, name),
+        return Registry.register(Registries.STATUS_EFFECT, Identifier.of(BeyondHorizons.MOD_ID, name),
                 new EffectOfTheTiger(StatusEffectCategory.NEUTRAL, 16738740));
     }
     public static void registerEffects() {

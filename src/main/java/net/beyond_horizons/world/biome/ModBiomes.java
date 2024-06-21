@@ -18,15 +18,15 @@ import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
 
 public class ModBiomes {
     public static final RegistryKey<Biome> JADESFOREST_BIOME = RegistryKey.of(RegistryKeys.BIOME,
-            new Identifier(BeyondHorizons.MOD_ID, "jadesforest"));
+            Identifier.of(BeyondHorizons.MOD_ID, "jadesforest"));
     public static final RegistryKey<Biome> SHADOWLANDS_BIOME = RegistryKey.of(RegistryKeys.BIOME,
-            new Identifier(BeyondHorizons.MOD_ID, "shadowlands"));
+            Identifier.of(BeyondHorizons.MOD_ID, "shadowlands"));
     public static final RegistryKey<Biome> DARKHOTMEADOW_BIOME = RegistryKey.of(RegistryKeys.BIOME,
-            new Identifier(BeyondHorizons.MOD_ID, "darkhotmeadow"));
+            Identifier.of(BeyondHorizons.MOD_ID, "darkhotmeadow"));
     public static final RegistryKey<Biome> COLDENASPEN_BIOME = RegistryKey.of(RegistryKeys.BIOME,
-            new Identifier(BeyondHorizons.MOD_ID, "coldenaspen"));
+            Identifier.of(BeyondHorizons.MOD_ID, "coldenaspen"));
     public static final RegistryKey<Biome> SHADYNIGHT_BIOME = RegistryKey.of(RegistryKeys.BIOME,
-            new Identifier(BeyondHorizons.MOD_ID, "shadynight"));
+            Identifier.of(BeyondHorizons.MOD_ID, "shadynight"));
 
     public static void boostrap(Registerable<Biome> context) {
         context.register(JADESFOREST_BIOME, JadesForestBiome(context));

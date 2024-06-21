@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.15,
+  "group": "shadowonyxbloodflame_wood",
+  "ingredient": {
+    "item": "beyond-horizons:shadowonyxbloodflame_wood"
+  },
+  "result": {
+    "id": "beyond-horizons:shadowonyxbloodflame_wood"
+  }
+}

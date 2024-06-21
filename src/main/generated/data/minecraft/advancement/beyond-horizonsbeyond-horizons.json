@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "beyond-horizons": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "beyond-horizons:textures/block/darkfire_planks.png",
+    "description": "Beyond Horizons Mod",
+    "icon": {
+      "count": 1,
+      "id": "beyond-horizons:beyondhorizons"
+    },
+    "title": "Beyond Horizons Mod"
+  },
+  "requirements": [
+    [
+      "beyond-horizons"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

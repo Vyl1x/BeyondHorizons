@@ -11,7 +11,7 @@ public class ModModelPredicateProvider {
     }
 
     private static void registerBow(Item bow) {
-        FabricModelPredicateProviderRegistry.register(bow, new Identifier("pull"),
+        FabricModelPredicateProviderRegistry.register(bow, Identifier.of("pull"),
                 (stack, world, entity, seed) -> {
                     if (entity == null) {
                         return 0.0f;
@@ -19,10 +19,10 @@ public class ModModelPredicateProvider {
                     if (entity.getActiveItem() != stack) {
                         return 0.0f;
                     }
-                    return (float)(stack.getMaxUseTime() - entity.getItemUseTimeLeft()) / 20.0f;
+                    return (float)(stack.getMaxUseTime(null) - entity.getItemUseTimeLeft()) / 20.0f;
                 });
 
-        FabricModelPredicateProviderRegistry.register(bow, new Identifier("pulling"),
+        FabricModelPredicateProviderRegistry.register(bow, Identifier.of("pulling"),
                 (stack, world, entity, seed) -> entity != null && entity.isUsingItem()
                         && entity.getActiveItem() == stack ? 1.0f : 0.0f);
     }

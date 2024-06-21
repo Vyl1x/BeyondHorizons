@@ -18,7 +18,7 @@ public class ModTags {
         public static final TagKey<Block> MULTI_TOOL = createTag("multi_tool");
 
         private static TagKey<Block> createTag(String name) {
-            return TagKey.of(Registries.BLOCK.getKey(), new Identifier(BeyondHorizons.MOD_ID, name));
+            return TagKey.of(Registries.BLOCK.getKey(), Identifier.of(BeyondHorizons.MOD_ID, name));
         }
     }
 
@@ -30,7 +30,7 @@ public class ModTags {
         public static final TagKey<Item> SLABS = createTag("slabs");
 
         private static TagKey<Item> createTag(String name) {
-            return TagKey.of(Registries.ITEM.getKey(), new Identifier(BeyondHorizons.MOD_ID, name));
+            return TagKey.of(Registries.ITEM.getKey(), Identifier.of(BeyondHorizons.MOD_ID, name));
         }
     }
 }

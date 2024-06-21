@@ -1,15 +1,16 @@
 package net.beyond_horizons.items.custom;
 
-import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.annotation.Nullable;
 import net.beyond_horizons.utils.ModTags;
 import net.beyond_horizons.utils.veinMiner;
 import net.minecraft.block.BlockState;
-import net.minecraft.client.item.TooltipContext;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
+import net.minecraft.item.tooltip.TooltipType;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
@@ -20,7 +21,7 @@ import java.util.List;
 
 public class ModCelestiteMultiToolItem extends MiningToolItem {
     public ModCelestiteMultiToolItem(float attackDamage, float attackSpeed, ToolMaterial material, Settings settings) {
-        super(attackDamage, attackSpeed, material, ModTags.Blocks.MULTITOOL, settings);
+        super(material, ModTags.Blocks.MULTITOOL, settings);
     }
 
     @Override
@@ -35,13 +36,13 @@ public class ModCelestiteMultiToolItem extends MiningToolItem {
     }
 
     @Override
-    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        super.appendTooltip(stack, world, tooltip, context);
+    public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+        super.appendTooltip(stack, context, tooltip, type);
 
         // Add custom tooltips here
         tooltip.add(Text.literal("Has vein miner that works on: Ores, Leaves, Logs").formatted(Formatting.YELLOW));
 
-        int fortuneLevel = EnchantmentHelper.getLevel(Enchantments.FORTUNE, stack);
+        int fortuneLevel = EnchantmentHelper.getLevel((RegistryEntry<Enchantment>) Enchantments.FORTUNE, stack);
         if (fortuneLevel > 0) {
             tooltip.add(Text.literal("Currently fortune only works with the first connected block.").formatted(Formatting.RED));
         }

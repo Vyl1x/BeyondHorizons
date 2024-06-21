@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "beyond-horizons:phoenixite_scrap"
+    },
+    "o": {
+      "item": "minecraft:gold_ingot"
+    },
+    "x": {
+      "item": "beyond-horizons:ruby_block"
+    }
+  },
+  "pattern": [
+    "xxx",
+    "x##",
+    "##o"
+  ],
+  "result": {
+    "count": 1,
+    "id": "beyond-horizons:phoenixite_ingot"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:beyond-horizons/mine-phoenixite",
+  "criteria": {
+    "smelt-phoenixite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "beyond-horizons:phoenixite_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "The fire power is yours",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "beyond-horizons:phoenixite_ingot"
+    },
+    "title": "Phoenixite"
+  },
+  "requirements": [
+    [
+      "smelt-phoenixite"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

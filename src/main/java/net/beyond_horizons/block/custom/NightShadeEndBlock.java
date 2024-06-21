@@ -1,5 +1,6 @@
 package net.beyond_horizons.block.custom;
 
+import com.mojang.serialization.MapCodec;
 import net.beyond_horizons.block.ModBlocks;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BlockState;
@@ -23,6 +24,11 @@ import java.util.Optional;
 public class NightShadeEndBlock extends SpreadableBlock implements Fertilizable {
     public NightShadeEndBlock(AbstractBlock.Settings settings) {
         super(settings);
+    }
+
+    @Override
+    protected MapCodec<? extends SpreadableBlock> getCodec() {
+        return null;
     }
 
     @Override

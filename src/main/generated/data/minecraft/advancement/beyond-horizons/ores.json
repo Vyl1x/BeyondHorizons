@@ -1,0 +1,42 @@
+{
+  "parent": "minecraft:beyond-horizonsbeyond-horizons",
+  "criteria": {
+    "ores": {
+      "conditions": {
+        "items": [
+          {
+            "items": "beyond-horizons:enderite_ore"
+          },
+          {
+            "items": "beyond-horizons:enderite_coal_ore"
+          },
+          {
+            "items": "beyond-horizons:phoenixite_ore"
+          },
+          {
+            "items": "beyond-horizons:celestite_ore"
+          },
+          {
+            "items": "beyond-horizons:ruby_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "The ores come last!! [Use Silk Touch]",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "beyond-horizons:enderite_ore"
+    },
+    "title": "Collect all types of ores"
+  },
+  "requirements": [
+    [
+      "ores"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

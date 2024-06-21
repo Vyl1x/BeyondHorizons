@@ -7,28 +7,30 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricAdvancementProvider;
 import net.minecraft.advancement.*;
 
+import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
 
 import net.minecraft.advancement.criterion.InventoryChangedCriterion;
 import net.minecraft.advancement.criterion.TickCriterion;
+import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModAdvancementGenerator extends FabricAdvancementProvider {
 
-    public ModAdvancementGenerator(FabricDataOutput output) {
-        super(output);
+    public ModAdvancementGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+        super(output, registryLookup);
     }
 
     @Override
-    public void generateAdvancement(Consumer<AdvancementEntry> consumer) {
+    public void generateAdvancement(RegistryWrapper.WrapperLookup registryLookup, Consumer<AdvancementEntry> consumer) {
         /** BEYOND HORIZONS PARENT **/
         AdvancementEntry BeyondHorizonsAdvancement = Advancement.Builder.create()
                 .display(
                         ModItems.BEYONDHORIZONS, // The display icon
                         Text.literal("Beyond Horizons Mod"), // The title
                         Text.literal("Beyond Horizons Mod"), // The description
-                        new Identifier("beyond-horizons:textures/block/darkfire_planks.png"), // Background image used
+                        Identifier.of("beyond-horizons:textures/block/darkfire_planks.png"), // Background image used
                         AdvancementFrame.TASK, // Options: TASK, CHALLENGE, GOAL
                         true, // Show toast top right
                         false, // Announce to chat

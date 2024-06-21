@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:beyond-horizons/smelt-enderite",
+  "criteria": {
+    "first-enderite-pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "beyond-horizons:enderite_pickaxe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "THIS IS BEAUTIFUL!!!!!",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "beyond-horizons:enderite_pickaxe"
+    },
+    "title": "Get your first Enderite Pickaxe"
+  },
+  "requirements": [
+    [
+      "first-enderite-pickaxe"
+    ]
+  ],
+  "rewards": {
+    "experience": 50
+  },
+  "sends_telemetry_event": true
+}

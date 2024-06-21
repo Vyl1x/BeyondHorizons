@@ -1,12 +1,12 @@
 package net.beyond_horizons.items.custom;
 
+import net.beyond_horizons.items.ModArmorMaterials;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
-import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
@@ -28,7 +28,7 @@ public class ModCelestiteArmorItem extends ArmorItem {
     */
 
 
-    public ModCelestiteArmorItem(ArmorMaterial material, Type type, Settings settings) {
+    public ModCelestiteArmorItem(ModArmorMaterials material, Type type, Settings settings) {
         super(material, type, settings);
     }
 

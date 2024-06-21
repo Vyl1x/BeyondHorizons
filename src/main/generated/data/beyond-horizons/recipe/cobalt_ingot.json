@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "beyond-horizons:cobalt_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "beyond-horizons:cobalt_ingot"
+  }
+}

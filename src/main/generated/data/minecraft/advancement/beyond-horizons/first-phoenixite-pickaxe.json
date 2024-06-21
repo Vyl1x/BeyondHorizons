@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:beyond-horizons/smelt-phoenixite",
+  "criteria": {
+    "first-phoenixite-pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "beyond-horizons:phoenixite_pickaxe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "THIS IS FIREEEEEE!!!!!",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "beyond-horizons:phoenixite_pickaxe"
+    },
+    "title": "Get your first Phoenixite Pickaxe"
+  },
+  "requirements": [
+    [
+      "first-phoenixite-pickaxe"
+    ]
+  ],
+  "rewards": {
+    "experience": 50
+  },
+  "sends_telemetry_event": true
+}

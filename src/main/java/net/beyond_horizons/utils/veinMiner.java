@@ -5,6 +5,7 @@ import net.beyond_horizons.config.bhserver.BHConfig;
 import net.beyond_horizons.items.custom.ModCelestiteMultiToolItem;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Hand;
@@ -27,7 +28,7 @@ public class veinMiner {
 
             if (neighborState.isOf(block)) {
                 world.breakBlock(neighborPos, true, player);
-                tool.damage(1, player, (p) -> p.sendToolBreakStatus(Hand.MAIN_HAND));
+                tool.damage(1, player, EquipmentSlot.MAINHAND);
                 //veinMine(neighborPos, world, block, player, count + 1);  // Increment counter
                 if(count < 8){
                     continueMining &= veinMine(pos.up(), world, block, player, count + 1);

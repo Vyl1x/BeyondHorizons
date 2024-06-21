@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 public class ModItemGroup {
 
     public static final ItemGroup BEYONDHORIZONSGROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(BeyondHorizons.MOD_ID, "beyondhorizonsgroup"),
+            Identifier.of(BeyondHorizons.MOD_ID, "beyondhorizonsgroup"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.beyondhorizonsgroup"))
                     .icon(() -> new ItemStack(ModItems.BEYONDHORIZONS)).entries((displayContext, entries) -> {
 

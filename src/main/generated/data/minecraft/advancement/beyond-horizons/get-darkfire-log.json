@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:beyond-horizons/get-logs",
+  "criteria": {
+    "get-darkfire-log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "beyond-horizons:darkfire_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "The logs come first!!",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "beyond-horizons:darkfire_log"
+    },
+    "title": "The darkness rises from the logs!"
+  },
+  "requirements": [
+    [
+      "get-darkfire-log"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

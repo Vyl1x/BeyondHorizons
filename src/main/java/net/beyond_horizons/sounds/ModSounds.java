@@ -16,7 +16,7 @@ public class ModSounds {
     public static SoundEvent DRAGON_WALK = register("dragon_walk");
 
     private static SoundEvent register(String name) {
-        return register(new Identifier(BeyondHorizons.MOD_ID, name));
+        return register(Identifier.of(BeyondHorizons.MOD_ID, name));
     }
 
     private static SoundEvent register(Identifier id) {

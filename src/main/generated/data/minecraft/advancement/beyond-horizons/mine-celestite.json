@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:beyond-horizons/ores",
+  "criteria": {
+    "mine-celestite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "beyond-horizons:raw_celestite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "One Celestite ahead!",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "beyond-horizons:celestite_ore"
+    },
+    "title": "Celestite Ore"
+  },
+  "requirements": [
+    [
+      "mine-celestite"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

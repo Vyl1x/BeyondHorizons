@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "beyond-horizons:enderite_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_sword"
+  },
+  "result": {
+    "count": 1,
+    "id": "beyond-horizons:enderite_sword"
+  },
+  "template": {
+    "item": "beyond-horizons:dimensional_template"
+  }
+}

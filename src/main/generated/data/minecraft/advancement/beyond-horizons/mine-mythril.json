@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:beyond-horizons/ores",
+  "criteria": {
+    "mine-mythril": {
+      "conditions": {
+        "items": [
+          {
+            "items": "beyond-horizons:mythril_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Mythril is green",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "beyond-horizons:mythril_ore"
+    },
+    "title": "Mythril Ore"
+  },
+  "requirements": [
+    [
+      "mine-mythril"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

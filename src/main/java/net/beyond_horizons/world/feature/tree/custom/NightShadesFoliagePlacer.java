@@ -1,6 +1,7 @@
 package net.beyond_horizons.world.feature.tree.custom;
 
 import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.beyond_horizons.world.feature.tree.ModFoliagePlacerTypes;
 import net.minecraft.util.math.intprovider.IntProvider;
@@ -11,7 +12,7 @@ import net.minecraft.world.gen.foliage.FoliagePlacer;
 import net.minecraft.world.gen.foliage.FoliagePlacerType;
 
 public class NightShadesFoliagePlacer extends FoliagePlacer {
-    public static final Codec<NightShadesFoliagePlacer> CODEC = RecordCodecBuilder.create(chestnutFoliagePlacerInstance ->
+    public static final MapCodec<NightShadesFoliagePlacer> CODEC = RecordCodecBuilder.mapCodec(chestnutFoliagePlacerInstance ->
             fillFoliagePlacerFields(chestnutFoliagePlacerInstance).and(Codec.intRange(0, 12).fieldOf("height")
                     .forGetter(instance -> instance.height)).apply(chestnutFoliagePlacerInstance, NightShadesFoliagePlacer::new));
     private final int height;

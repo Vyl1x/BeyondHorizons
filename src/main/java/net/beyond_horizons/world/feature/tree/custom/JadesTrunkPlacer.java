@@ -2,6 +2,7 @@ package net.beyond_horizons.world.feature.tree.custom;
 
 import com.google.common.collect.ImmutableList;
 import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.beyond_horizons.world.feature.tree.ModTrunkPlacerTypes;
 import net.minecraft.block.BlockState;
@@ -20,7 +21,7 @@ import java.util.function.BiConsumer;
 import java.util.function.Function;
 
 public class JadesTrunkPlacer extends TrunkPlacer {
-    public static final Codec<JadesTrunkPlacer> CODEC = RecordCodecBuilder.create(objectInstance ->
+    public static final MapCodec<JadesTrunkPlacer> CODEC = RecordCodecBuilder.mapCodec(objectInstance ->
             fillTrunkPlacerFields(objectInstance).apply(objectInstance, JadesTrunkPlacer::new));
 
     public JadesTrunkPlacer(int baseHeight, int firstRandomHeight, int secondRandomHeight) {
