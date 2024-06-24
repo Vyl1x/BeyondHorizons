@@ -1,30 +1,22 @@
 package net.beyond_horizons.items.custom;
 
+import java.util.function.Supplier;
+
 import com.google.common.base.Suppliers;
+
 import net.beyond_horizons.items.ModArmorMaterial;
 import net.minecraft.block.DispenserBlock;
 import net.minecraft.component.type.AttributeModifierSlot;
 import net.minecraft.component.type.AttributeModifiersComponent;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
-import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.ItemStack;
-import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.World;
 
-import java.util.function.Supplier;
-
-public class ModCelestiteArmorItem extends ArmorItem {
-
+public class ModArmorItem extends ArmorItem {
     private final Supplier<AttributeModifiersComponent> trueAttributeModifiers;
-    public ModCelestiteArmorItem(ModArmorMaterial material, Type type, Settings settings) {
+
+    public ModArmorItem (ModArmorMaterial material, Type type, Settings settings) {
         super(material.getBaseMaterial(), type, settings);
         DispenserBlock.registerBehavior(this, ArmorItem.DISPENSER_BEHAVIOR);
 
@@ -64,20 +56,6 @@ public class ModCelestiteArmorItem extends ArmorItem {
             }
             return builder.build();
         });
-    }
-
-    @Override
-    public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
-        super.inventoryTick(stack, world, entity, slot, selected);
-
-        if (!(entity instanceof PlayerEntity)) {
-            return;
-        }
-        PlayerEntity player = (PlayerEntity) entity;
-
-        if (player.getEquippedStack(EquipmentSlot.HEAD).getItem() instanceof ModCelestiteArmorItem) {
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20, 1));
-        }
     }
 
     @Override

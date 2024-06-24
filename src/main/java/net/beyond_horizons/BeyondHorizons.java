@@ -12,13 +12,16 @@ import net.beyond_horizons.world.feature.gen.ModWorldGen;
 import net.beyond_horizons.world.feature.tree.ModFoliagePlacerTypes;
 import net.beyond_horizons.world.feature.tree.ModTrunkPlacerTypes;
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class BeyondHorizons implements ModInitializer {
     public static final String MOD_ID = "beyond-horizons";
     public static final Logger LOGGER = LoggerFactory.getLogger("beyond-horizons");
-
+    public static Identifier identifier (String path) {
+        return Identifier.of(MOD_ID, path);
+    }
     public void onInitialize() {
 
         ModItems.registerModItems();

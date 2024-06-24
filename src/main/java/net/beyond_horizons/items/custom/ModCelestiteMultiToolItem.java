@@ -42,9 +42,9 @@ public class ModCelestiteMultiToolItem extends MiningToolItem {
         // Add custom tooltips here
         tooltip.add(Text.literal("Has vein miner that works on: Ores, Leaves, Logs").formatted(Formatting.YELLOW));
 
-        int fortuneLevel = EnchantmentHelper.getLevel((RegistryEntry<Enchantment>) Enchantments.FORTUNE, stack);
-        if (fortuneLevel > 0) {
+        //int fortuneLevel = EnchantmentHelper.getLevel(Enchantments.FORTUNE, stack);
+        //if (fortuneLevel > 0) {
             tooltip.add(Text.literal("Currently fortune only works with the first connected block.").formatted(Formatting.RED));
-        }
+        //}
     }
 }

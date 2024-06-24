@@ -151,53 +151,53 @@ public class ModItems {
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.Celestite,-1.5F, 0.1F))));
 
     public static final Item RUBY_HELMET = registerItem("ruby_helmet",
-            new ArmorItem(ModArmorMaterials.Ruby, ArmorItem.Type.HELMET, new Item.Settings()));
+            new ArmorItem(ModArmorMaterial.Ruby, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(22))));
     public static final Item RUBY_CHESTPLATE = registerItem("ruby_chestplate",
-            new ArmorItem(ModArmorMaterials.Ruby, ArmorItem.Type.CHESTPLATE, new Item.Settings()));
+            new ArmorItem(ModArmorMaterial.Ruby, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(22))));
     public static final Item RUBY_LEGGINGS = registerItem("ruby_leggings",
-            new ArmorItem(ModArmorMaterials.Ruby, ArmorItem.Type.LEGGINGS, new Item.Settings()));
+            new ArmorItem(ModArmorMaterial.Ruby, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(22))));
     public static final Item RUBY_BOOTS = registerItem("ruby_boots",
-            new ArmorItem(ModArmorMaterials.Ruby, ArmorItem.Type.BOOTS, new Item.Settings()));
+            new ArmorItem(ModArmorMaterial.Ruby, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(22))));
     public static final Item ENDERITE_HELMET = registerItem("enderite_helmet",
-            new ArmorItem(ModArmorMaterials.Enderite, ArmorItem.Type.HELMET, new Item.Settings()));
+            new ArmorItem(ModArmorMaterial.Enderite, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(43))));
     public static final Item ENDERITE_CHESTPLATE = registerItem("enderite_chestplate",
-            new ArmorItem(ModArmorMaterials.Enderite, ArmorItem.Type.CHESTPLATE, new Item.Settings()));
+            new ArmorItem(ModArmorMaterial.Enderite, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(43))));
     public static final Item ENDERITE_LEGGINGS = registerItem("enderite_leggings",
-            new ArmorItem(ModArmorMaterials.Enderite, ArmorItem.Type.LEGGINGS, new Item.Settings()));
+            new ArmorItem(ModArmorMaterial.Enderite, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(43))));
     public static final Item ENDERITE_BOOTS = registerItem("enderite_boots",
-            new ArmorItem(ModArmorMaterials.Enderite, ArmorItem.Type.BOOTS, new Item.Settings()));
+            new ArmorItem(ModArmorMaterial.Enderite, ArmorItem.Type.BOOTS, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(43))));
     public static final Item PHOENIXITE_HELMET = registerItem("phoenixite_helmet",
-            new ArmorItem(ModArmorMaterials.Phoenixite, ArmorItem.Type.HELMET, new Item.Settings()));
+            new ArmorItem(ModArmorMaterial.Phoenixite, ArmorItem.Type.HELMET, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(43))));
     public static final Item PHOENIXITE_CHESTPLATE = registerItem("phoenixite_chestplate",
-            new ArmorItem(ModArmorMaterials.Phoenixite, ArmorItem.Type.CHESTPLATE, new Item.Settings()));
+            new ArmorItem(ModArmorMaterial.Phoenixite, ArmorItem.Type.CHESTPLATE, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(43))));
     public static final Item PHOENIXITE_LEGGINGS = registerItem("phoenixite_leggings",
-            new ArmorItem(ModArmorMaterials.Phoenixite, ArmorItem.Type.LEGGINGS, new Item.Settings()));
+            new ArmorItem(ModArmorMaterial.Phoenixite, ArmorItem.Type.LEGGINGS, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(43))));
     public static final Item PHOENIXITE_BOOTS = registerItem("phoenixite_boots",
-            new ArmorItem(ModArmorMaterials.Phoenixite, ArmorItem.Type.BOOTS, new Item.Settings()));
+            new ArmorItem(ModArmorMaterial.Phoenixite, ArmorItem.Type.BOOTS, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(43))));
     public static final Item CELESTITE_HELMET = registerItem("celestite_helmet",
-            new ModCelestiteArmorItem(ModArmorMaterials.Celestite, ArmorItem.Type.HELMET, new Item.Settings()));
+            new ModCelestiteArmorItem(ModArmorMaterials.Celestite, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(46))));
     public static final Item CELESTITE_CHESTPLATE = registerItem("celestite_chestplate",
-            new ModCelestiteArmorItem(ModArmorMaterials.Celestite, ArmorItem.Type.CHESTPLATE, new Item.Settings()));
+            new ModCelestiteArmorItem(ModArmorMaterials.Celestite, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(46))));
     public static final Item CELESTITE_LEGGINGS = registerItem("celestite_leggings",
-            new ModCelestiteArmorItem(ModArmorMaterials.Celestite, ArmorItem.Type.LEGGINGS, new Item.Settings()));
+            new ModCelestiteArmorItem(ModArmorMaterials.Celestite, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(46))));
     public static final Item CELESTITE_BOOTS = registerItem("celestite_boots",
-            new ModCelestiteArmorItem(ModArmorMaterials.Celestite, ArmorItem.Type.BOOTS, new Item.Settings()));
-    public static final Item MYTHRIL_HELMET = registerItem("mythril_helmet",
-            new ArmorItem(ModArmorMaterials.Mythril, ArmorItem.Type.HELMET, new Item.Settings()));
-    public static final Item MYTHRIL_CHESTPLATE = registerItem("mythril_chestplate",
-            new ArmorItem(ModArmorMaterials.Mythril, ArmorItem.Type.CHESTPLATE, new Item.Settings()));
-    public static final Item MYTHRIL_LEGGINGS = registerItem("mythril_leggings",
-            new ArmorItem(ModArmorMaterials.Mythril, ArmorItem.Type.LEGGINGS, new Item.Settings()));
-    public static final Item MYTHRIL_BOOTS = registerItem("mythril_boots",
-            new ArmorItem(ModArmorMaterials.Mythril, ArmorItem.Type.BOOTS, new Item.Settings()));
+            new ModCelestiteArmorItem(ModArmorMaterials.Celestite, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(46))));
     public static final Item COBALT_HELMET = registerItem("cobalt_helmet",
-            new ArmorItem(ModArmorMaterials.Cobalt, ArmorItem.Type.HELMET, new Item.Settings()));
+            new ArmorItem(ModArmorMaterial.Cobalt, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(36))));
     public static final Item COBALT_CHESTPLATE = registerItem("cobalt_chestplate",
-            new ArmorItem(ModArmorMaterials.Cobalt, ArmorItem.Type.CHESTPLATE, new Item.Settings()));
+            new ArmorItem(ModArmorMaterial.Cobalt, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(36))));
     public static final Item COBALT_LEGGINGS = registerItem("cobalt_leggings",
-            new ArmorItem(ModArmorMaterials.Cobalt, ArmorItem.Type.LEGGINGS, new Item.Settings()));
+            new ArmorItem(ModArmorMaterial.Cobalt, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(36))));
     public static final Item COBALT_BOOTS = registerItem("cobalt_boots",
-            new ArmorItem(ModArmorMaterials.Cobalt, ArmorItem.Type.BOOTS, new Item.Settings()));
+            new ArmorItem(ModArmorMaterial.Cobalt, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(36))));
+    public static final Item MYTHRIL_HELMET = registerItem("mythril_helmet",
+            new ArmorItem(ModArmorMaterial.Mythril, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(39))));
+    public static final Item MYTHRIL_CHESTPLATE = registerItem("mythril_chestplate",
+            new ArmorItem(ModArmorMaterial.Mythril, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(39))));
+    public static final Item MYTHRIL_LEGGINGS = registerItem("mythril_leggings",
+            new ArmorItem(ModArmorMaterial.Mythril, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(39))));
+    public static final Item MYTHRIL_BOOTS = registerItem("mythril_boots",
+            new ArmorItem(ModArmorMaterial.Mythril, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(39))));
 
     public static void addItemsToItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);
