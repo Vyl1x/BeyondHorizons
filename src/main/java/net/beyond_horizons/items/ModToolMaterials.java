@@ -2,6 +2,7 @@ package net.beyond_horizons.items;
 
 import com.google.common.base.Suppliers;
 import net.beyond_horizons.block.ModBlocks;
+import net.beyond_horizons.utils.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ToolMaterial;
@@ -15,25 +16,25 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
 
-    Ruby(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 784, 3, 12.5F, 21, () ->
+    Ruby(ModTags.Blocks.INCORRECT_FOR_RUBY_TOOL, 784, 3, 12.5F, 21, () ->
             Ingredient.ofItems(ModItems.RUBY)),
 
-    Enderite(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 1974, 4, 10.5F, 27, () ->
+    Enderite(ModTags.Blocks.INCORRECT_FOR_ENDERITE_TOOL, 1974, 4, 10.5F, 27, () ->
             Ingredient.ofItems(ModItems.ENDERITE_INGOT)),
 
-    Phoenixite(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 1841, 4, 10.0F, 27, () ->
+    Phoenixite(ModTags.Blocks.INCORRECT_FOR_PHOENIXITE_TOOL, 1841, 4, 10.0F, 27, () ->
             Ingredient.ofItems(ModItems.PHOENIXITE_INGOT)),
 
-    Celestite(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 2133, 4, 11.0F, 27, () ->
+    Celestite(ModTags.Blocks.INCORRECT_FOR_CELESTITE_TOOL, 2133, 4, 11.0F, 27, () ->
             Ingredient.ofItems(ModBlocks.CELESTITE_BLOCK)),
 
-    Cobalt(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 1306, 4, 10.0F, 24, () ->
+    Cobalt(ModTags.Blocks.INCORRECT_FOR_COBALT_TOOL, 1306, 4, 10.0F, 24, () ->
             Ingredient.ofItems(ModItems.COBALT_INGOT)),
 
-    Mythril(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 4, 1923, 11.0F, 24, () ->
+    Mythril(ModTags.Blocks.INCORRECT_FOR_MYTHRIL_TOOL, 4, 1923, 11.0F, 24, () ->
             Ingredient.ofItems(ModItems.MYTHRIL_INGOT)),
 
-    CobaltMT(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 5, 5000, 13.0F, 27, () ->
+    CobaltMT(ModTags.Blocks.INCORRECT_FOR_COBALTMT_TOOL, 5, 5000, 13.0F, 27, () ->
             Ingredient.ofItems(ModBlocks.COBALT_BLOCK));
 
     private final TagKey<Block> inverseTag;

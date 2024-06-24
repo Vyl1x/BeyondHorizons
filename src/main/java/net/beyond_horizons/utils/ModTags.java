@@ -16,6 +16,13 @@ public class ModTags {
         public static final TagKey<Block> LEAVES = createTag("leaves");
         public static final TagKey<Block> MULTITOOL = createTag("multitool");
         public static final TagKey<Block> MULTI_TOOL = createTag("multi_tool");
+        public static final TagKey<Block> INCORRECT_FOR_RUBY_TOOL = createTag("incorrect_for_ruby_tool");
+        public static final TagKey<Block> INCORRECT_FOR_ENDERITE_TOOL = createTag("incorrect_for_enderite_tool");
+        public static final TagKey<Block> INCORRECT_FOR_PHOENIXITE_TOOL = createTag("incorrect_for_phoenixite_tool");
+        public static final TagKey<Block> INCORRECT_FOR_CELESTITE_TOOL = createTag("incorrect_for_celestite_tool");
+        public static final TagKey<Block> INCORRECT_FOR_COBALT_TOOL = createTag("incorrect_for_cobalt_tool");
+        public static final TagKey<Block> INCORRECT_FOR_MYTHRIL_TOOL = createTag("incorrect_for_mythril_tool");
+        public static final TagKey<Block> INCORRECT_FOR_COBALTMT_TOOL = createTag("incorrect_for_cobaltmt_tool");
 
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(Registries.BLOCK.getKey(), Identifier.of(BeyondHorizons.MOD_ID, name));
