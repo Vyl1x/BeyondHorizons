@@ -1,9 +1,9 @@
-// 1.20.2	2024-05-23T16:34:23.7016963	Beyond Horizons/Tags for minecraft:item
-467afc09bae67e3f809eebde7914dccbb616792f data\beyond-horizons\tags\items\planks.json
-78597035ec67c5ab5483991edfc6d79f169c0675 data\beyond-horizons\tags\items\ores.json
-3c20ada01517e0bc309efa2c3d3a778f6ed6a92b data\beyond-horizons\tags\items\slabs.json
-0e02c422233899f43749eed690bdad627b4062ed data\beyond-horizons\tags\items\coals.json
-25b694a9096e6ba883dd94eedab8623fb8eb1bee data\minecraft\tags\items\fences.json
-53262e57586c72ad4d69848ce4e9ba8ba6cdc654 data\beyond-horizons\tags\items\logs.json
-5609f1fff7f79de336f3c9da3dff0f32f43c0b2d data\minecraft\tags\items\trimmable_armor.json
-6b81055004d1a5b3dacb26c817b4824c60ca6806 data\minecraft\tags\items\logs_that_burn.json
+// 1.21	2024-06-24T03:52:05.3655598	Beyond Horizons/Tags for minecraft:item
+a7c2525ebf738f86911250e225a8f042c4667cf5 data\beyond-horizons\tags\item\ores.json
+17cad99906299a55b2a8d66d67d790d0dac0d039 data\beyond-horizons\tags\item\slabs.json
+eeed2654db58a1146f64b45c833bd112b391e482 data\minecraft\tags\item\trimmable_armor.json
+5e81982823a644cdccb42eca0dd2d0596c9f724e data\beyond-horizons\tags\item\logs.json
+a119561db973442ffdfe20ad7b0ca772163dd581 data\minecraft\tags\item\logs_that_burn.json
+a9c05fdd8247d41085c49b6c9193c9487d34c909 data\minecraft\tags\item\fences.json
+36e29a5ba0cfa5546d5797e1164c5503fad3b152 data\beyond-horizons\tags\item\coals.json
+9af6fbef6ac7f44a525933709af185e49d44c5b7 data\beyond-horizons\tags\item\planks.json

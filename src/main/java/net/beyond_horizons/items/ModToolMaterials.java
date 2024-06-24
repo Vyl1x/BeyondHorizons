@@ -1,58 +1,56 @@
 package net.beyond_horizons.items;
 
+import com.google.common.base.Suppliers;
 import net.beyond_horizons.block.ModBlocks;
 import net.minecraft.block.Block;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Lazy;
 
+import java.util.Objects;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
 
-    Ruby(3, 784, 12.5F, 2.0F, 21, () -> {
-        return Ingredient.ofItems(ModItems.RUBY);
-    }),
+    Ruby(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 784, 3, 12.5F, 21, () ->
+            Ingredient.ofItems(ModItems.RUBY)),
 
-    Enderite(4, 1974, 10.5F, 2.5F, 27, () -> {
-        return Ingredient.ofItems(ModItems.ENDERITE_INGOT);
-    }),
+    Enderite(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 1974, 4, 10.5F, 27, () ->
+            Ingredient.ofItems(ModItems.ENDERITE_INGOT)),
 
-    Phoenixite(4, 1841, 10.0F, 2.7F, 27, () -> {
-        return Ingredient.ofItems(ModItems.PHOENIXITE_INGOT);
-    }),
+    Phoenixite(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 1841, 4, 10.0F, 27, () ->
+            Ingredient.ofItems(ModItems.PHOENIXITE_INGOT)),
 
-    Celestite(4, 2133, 11.0F, 3.0F, 27, () -> {
-        return Ingredient.ofItems(ModBlocks.CELESTITE_BLOCK);
-    }),
+    Celestite(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 2133, 4, 11.0F, 27, () ->
+            Ingredient.ofItems(ModBlocks.CELESTITE_BLOCK)),
 
-    Cobalt(4, 1306, 10.0F, 2.0F, 24, () -> {
-        return Ingredient.ofItems(ModItems.COBALT_INGOT);
-    }),
+    Cobalt(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 1306, 4, 10.0F, 24, () ->
+            Ingredient.ofItems(ModItems.COBALT_INGOT)),
 
-    Mythril(4, 1923, 11.0F, 2.0F, 24, () -> {
-        return Ingredient.ofItems(ModItems.MYTHRIL_INGOT);
-    }),
+    Mythril(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 4, 1923, 11.0F, 24, () ->
+            Ingredient.ofItems(ModItems.MYTHRIL_INGOT)),
 
-    CobaltMT(5, 5000, 13.0F, 1.0F, 27, () -> {
-        return Ingredient.ofItems(ModBlocks.COBALT_BLOCK);
-    });
+    CobaltMT(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 5, 5000, 13.0F, 27, () ->
+            Ingredient.ofItems(ModBlocks.COBALT_BLOCK));
 
-    private final int miningLevel;
+    private final TagKey<Block> inverseTag;
     private final int itemDurability;
     private final float miningSpeed;
     private final float attackDamage;
     private final int enchantability;
-    private final Lazy<Ingredient> repairIngredient;
+    private final Supplier<Ingredient> repairIngredient;
 
-    private ModToolMaterials(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
-        this.miningLevel = miningLevel;
+    private ModToolMaterials(final TagKey inverseTag, final int itemDurability, final float miningSpeed, final float attackDamage, final int enchantability, final Supplier<Ingredient> repairIngredient) {
+        this.inverseTag = inverseTag;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;
         this.attackDamage = attackDamage;
         this.enchantability = enchantability;
-        this.repairIngredient = new Lazy(repairIngredient);
+        Objects.requireNonNull(repairIngredient);
+        this.repairIngredient = Suppliers.memoize(repairIngredient::get);
     }
 
     public int getDurability() {
@@ -67,13 +65,8 @@ public enum ModToolMaterials implements ToolMaterial {
         return this.attackDamage;
     }
 
-    @Override
     public TagKey<Block> getInverseTag() {
-        return null;
-    }
-
-    public int getMiningLevel() {
-        return this.miningLevel;
+        return this.inverseTag;
     }
 
     public int getEnchantability() {
@@ -81,6 +74,6 @@ public enum ModToolMaterials implements ToolMaterial {
     }
 
     public Ingredient getRepairIngredient() {
-        return repairIngredient.get();
+        return (Ingredient)this.repairIngredient.get();
     }
 }

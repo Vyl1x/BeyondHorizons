@@ -20,7 +20,7 @@ import net.minecraft.item.ToolMaterial;
 import java.util.List;
 
 public class ModCelestiteMultiToolItem extends MiningToolItem {
-    public ModCelestiteMultiToolItem(float attackDamage, float attackSpeed, ToolMaterial material, Settings settings) {
+    public ModCelestiteMultiToolItem(ToolMaterial material, Settings settings) {
         super(material, ModTags.Blocks.MULTITOOL, settings);
     }
 

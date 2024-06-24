@@ -1,4 +1,4 @@
-// 1.20.2	2024-05-23T16:34:23.6977253	Beyond Horizons/Model Definitions
+// 1.21	2024-06-24T03:52:05.3620234	Beyond Horizons/Model Definitions
 53beee0d4d0b39f615cbe9a45872fb13d8db5982 assets\beyond-horizons\models\item\celestite_leggings_gold_trim.json
 adf65cdaed704aafd5c3f6f92eaece60cc4b1922 assets\beyond-horizons\models\block\enderite_ore.json
 71f2d87fe218f9b080b32330dface45cdaf94d7b assets\beyond-horizons\models\item\phoenixite_boots_iron_trim.json
@@ -254,8 +254,8 @@ dc4343e2b99951256cc54aa273366eb510facfb7 assets\beyond-horizons\models\item\cele
 58879f384db375510730bb12add6d01f63336665 assets\beyond-horizons\models\item\phoenixite_leggings_netherite_trim.json
 f6b6a570d227e65282c1b5f06b53a34e111ff5f6 assets\beyond-horizons\models\item\ruby_helmet_gold_trim.json
 941f75ebe28f5471269b5efbde3f11185f9bc8a9 assets\beyond-horizons\models\block\stripped_shadowonyxbloodflame_wood.json
-dd8ced6cc430b63ffc3e6abd37ba6eb3d45386d8 assets\beyond-horizons\models\item\enderite_pickaxe.json
 d59a4ecbc7031ef8c14f9c1b82ce0afd5ebf0b9c assets\beyond-horizons\models\item\ruby_leggings_netherite_trim.json
+dd8ced6cc430b63ffc3e6abd37ba6eb3d45386d8 assets\beyond-horizons\models\item\enderite_pickaxe.json
 a872d8476ad2a7c4efaac4b9feda0071f931b3f7 assets\beyond-horizons\models\block\shadowonyxbloodflame_door_top_left.json
 ad68987d8a3cd93ecee0efc38d97f138bacd0c45 assets\beyond-horizons\models\block\shadowonyxbloodflame_door_top_left_open.json
 17f4e3617e75cf1559d28c4791cac4a5a323f252 assets\beyond-horizons\models\item\junglejade_planks.json
@@ -465,8 +465,8 @@ c7b608e6d21e6945a02c6a549101140a54d25080 assets\beyond-horizons\models\block\dar
 5f5d4f3764d7064a94e51fe77dc64bcd67d267cc assets\beyond-horizons\models\item\enderite_boots_quartz_trim.json
 dd58bcfeb50765094594b8b46a6f14acde335d8e assets\beyond-horizons\models\item\phoenixite_leggings_amethyst_trim.json
 208903a3904e7bf5054bb7d0ebde6e7958159fde assets\beyond-horizons\models\block\shadowonyxbloodflame_leaves.json
-6fae87ce6a13722245f70ae748671fc4bfe643af assets\beyond-horizons\models\block\ruby_ore.json
 ff3bf0c790f00ba0bde8318f0089a1ae0bc654b5 assets\beyond-horizons\models\item\celestite_block.json
+6fae87ce6a13722245f70ae748671fc4bfe643af assets\beyond-horizons\models\block\ruby_ore.json
 97aa708fc01c0ac3f4573fc872a0cabc08c66351 assets\beyond-horizons\models\item\crystalaspen_door.json
 8a1fb59fe7f63a0923fa30fdeb33a694c9620404 assets\beyond-horizons\blockstates\junglejade_door.json
 825f1676dfccb89b593f0cdccf75dbbddd717c68 assets\beyond-horizons\models\block\phoenixite_block.json

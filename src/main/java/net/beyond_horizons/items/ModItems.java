@@ -3,9 +3,7 @@ package net.beyond_horizons.items;
 import net.beyond_horizons.BeyondHorizons;
 import net.beyond_horizons.items.custom.*;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.BowItem;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -51,75 +49,106 @@ public class ModItems {
             new AmuletOfTheCat(new Item.Settings()));
 
     public static final Item RUBY_SWORD = registerItem("ruby_sword",
-            new ModSwordItem(ModToolMaterials.Ruby, 4, -2.25F, (new Item.Settings())));
+            new ModSwordItem(ModToolMaterials.Ruby, (new Item.Settings())
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.Ruby, 4, -2.25F))));
     public static final Item RUBY_PICKAXE = registerItem("ruby_pickaxe",
-            new ModPickaxeItem(ModToolMaterials.Ruby, 2.0F, -2.65F, (new Item.Settings())));
+            new ModPickaxeItem(ModToolMaterials.Ruby, (new Item.Settings())
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.Ruby, 2.0F, -2.65F))));
     public static final Item RUBY_AXE = registerItem("ruby_axe",
-            new ModAxeItem(ModToolMaterials.Ruby, 6.0F, -2.85F, (new Item.Settings())));
+            new ModAxeItem(ModToolMaterials.Ruby, (new Item.Settings())
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.Ruby, 6.0F, -2.85F))));
     public static final Item RUBY_SHOVEL = registerItem("ruby_shovel",
-            new ModShovelItem(ModToolMaterials.Ruby, 3.0F, -2.85F, (new Item.Settings())));
+            new ModShovelItem(ModToolMaterials.Ruby, (new Item.Settings())
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.Ruby, 3.0F, -2.85F))));
     public static final Item RUBY_HOE = registerItem("ruby_hoe",
-            new ModHoeItem(ModToolMaterials.Ruby, -2.4F, 0.2F, (new Item.Settings())));
+            new ModHoeItem(ModToolMaterials.Ruby, (new Item.Settings())
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.Ruby, -2.4F, 0.2F))));
 
     public static final Item MYTHRIL_SWORD = registerItem("mythril_sword",
-            new ModSwordItem(ModToolMaterials.Mythril, 4, -2.25F, (new Item.Settings())));
+            new ModSwordItem(ModToolMaterials.Mythril, (new Item.Settings())
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.Mythril, 4, -2.25F))));
     public static final Item MYTHRIL_PICKAXE = registerItem("mythril_pickaxe",
-            new ModPickaxeItem(ModToolMaterials.Mythril, 2.0F, -2.65F, (new Item.Settings())));
+            new ModPickaxeItem(ModToolMaterials.Mythril, (new Item.Settings())
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.Mythril, 2.0F, -2.65F))));
     public static final Item MYTHRIL_AXE = registerItem("mythril_axe",
-            new ModAxeItem(ModToolMaterials.Mythril, 6.0F, -2.85F, (new Item.Settings())));
+            new ModAxeItem(ModToolMaterials.Mythril, (new Item.Settings())
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.Mythril, 6.0F, -2.85F))));
     public static final Item MYTHRIL_SHOVEL = registerItem("mythril_shovel",
-            new ModShovelItem(ModToolMaterials.Mythril, 3.0F, -2.85F, (new Item.Settings())));
+            new ModShovelItem(ModToolMaterials.Mythril, (new Item.Settings())
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.Mythril, 3.0F, -2.85F))));
     public static final Item MYTHRIL_HOE = registerItem("mythril_hoe",
-            new ModHoeItem(ModToolMaterials.Mythril, -2.4F, 0.2F, (new Item.Settings())));
+            new ModHoeItem(ModToolMaterials.Mythril, (new Item.Settings())
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.Mythril, -2.4F, 0.2F))));
 
     public static final Item COBALT_SWORD = registerItem("cobalt_sword",
-            new ModSwordItem(ModToolMaterials.Cobalt, 4, -2.25F, (new Item.Settings())));
+            new ModSwordItem(ModToolMaterials.Cobalt, (new Item.Settings())
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.Cobalt, 4, -2.25F))));
     public static final Item COBALT_PICKAXE = registerItem("cobalt_pickaxe",
-            new ModPickaxeItem(ModToolMaterials.Cobalt, 2.0F, -2.65F, (new Item.Settings())));
+            new ModPickaxeItem(ModToolMaterials.Cobalt, (new Item.Settings())
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.Cobalt, 2.0F, -2.65F))));
     public static final Item COBALT_AXE = registerItem("cobalt_axe",
-            new ModAxeItem(ModToolMaterials.Cobalt, 6.0F, -2.85F, (new Item.Settings())));
+            new ModAxeItem(ModToolMaterials.Cobalt, (new Item.Settings())
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.Cobalt, 6.0F, -2.85F))));
     public static final Item COBALT_SHOVEL = registerItem("cobalt_shovel",
-            new ModShovelItem(ModToolMaterials.Cobalt, 3.0F, -2.85F, (new Item.Settings())));
+            new ModShovelItem(ModToolMaterials.Cobalt, (new Item.Settings())
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.Cobalt, 3.0F, -2.85F))));
     public static final Item COBALT_HOE = registerItem("cobalt_hoe",
-            new ModHoeItem(ModToolMaterials.Cobalt, -2.4F, 0.2F, (new Item.Settings())));
+            new ModHoeItem(ModToolMaterials.Cobalt, (new Item.Settings())
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.Cobalt, -2.4F, 0.2F))));
     public static final Item COBALT_MULTI_TOOL = registerItem("cobalt_multi_tool",
-            new ModCelestiteMultiToolItem(3.5F, 0.1F, ModToolMaterials.CobaltMT, (new Item.Settings())));
+            new ModCelestiteMultiToolItem(ModToolMaterials.CobaltMT, (new Item.Settings())
+                    .attributeModifiers(MiningToolItem.createAttributeModifiers(ModToolMaterials.CobaltMT, 3.5F, 0.1F))));
 
     public static final Item COBALT_BOW = registerItem("cobalt_bow",
             new BowItem(new Item.Settings().maxDamage(640)));
 
     public static final Item ENDERITE_SWORD = registerItem("enderite_sword",
-            new ModSwordItem(ModToolMaterials.Enderite, 5, -2.3F, (new Item.Settings())));
+            new ModSwordItem(ModToolMaterials.Enderite, (new Item.Settings())
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.Enderite, 5, -2.3F))));
     public static final Item ENDERITE_PICKAXE = registerItem("enderite_pickaxe",
-            new ModPickaxeItem(ModToolMaterials.Enderite, 5.0F, -2.7F, (new Item.Settings())));
+            new ModPickaxeItem(ModToolMaterials.Enderite, (new Item.Settings())
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.Enderite, 5.0F, -2.7F))));
     public static final Item ENDERITE_AXE = registerItem("enderite_axe",
-            new ModAxeItem(ModToolMaterials.Enderite, 9.0F, -2.9F, (new Item.Settings())));
+            new ModAxeItem(ModToolMaterials.Enderite, (new Item.Settings())
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.Enderite, 9.0F, -2.9F))));
     public static final Item ENDERITE_SHOVEL = registerItem("enderite_shovel",
-            new ModShovelItem(ModToolMaterials.Enderite, 3.5F, -2.9F, (new Item.Settings())));
+            new ModShovelItem(ModToolMaterials.Enderite, (new Item.Settings())
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.Enderite, 3.5F, -2.9F))));
     public static final Item ENDERITE_HOE = registerItem("enderite_hoe",
-            new ModHoeItem(ModToolMaterials.Enderite, -2.4F, 0.1F, (new Item.Settings())));
+            new ModHoeItem(ModToolMaterials.Enderite, (new Item.Settings())
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.Enderite, -2.4F, 0.1F))));
 
     public static final Item PHOENIXITE_SWORD = registerItem("phoenixite_sword",
-            new ModSwordItem(ModToolMaterials.Phoenixite, 6, -2.35F, (new Item.Settings())));
+            new ModSwordItem(ModToolMaterials.Phoenixite, (new Item.Settings())
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.Phoenixite, 6, -2.35F))));
     public static final Item PHOENIXITE_PICKAXE = registerItem("phoenixite_pickaxe",
-            new ModPickaxeItem(ModToolMaterials.Phoenixite, 5.0F, -2.75F, (new Item.Settings())));
+            new ModPickaxeItem(ModToolMaterials.Phoenixite, (new Item.Settings())
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.Phoenixite, 5.0F, -2.75F))));
     public static final Item PHOENIXITE_AXE = registerItem("phoenixite_axe",
-            new ModAxeItem(ModToolMaterials.Phoenixite, 10.0F, -2.95F, (new Item.Settings())));
+            new ModAxeItem(ModToolMaterials.Phoenixite, (new Item.Settings())
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.Phoenixite, 10.0F, -2.95F))));
     public static final Item PHOENIXITE_SHOVEL = registerItem("phoenixite_shovel",
-            new ModShovelItem(ModToolMaterials.Phoenixite, 3.4F, -2.95F, (new Item.Settings())));
+            new ModShovelItem(ModToolMaterials.Phoenixite, (new Item.Settings())
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.Phoenixite, 3.4F, -2.95F))));
     public static final Item PHOENIXITE_HOE = registerItem("phoenixite_hoe",
-            new ModHoeItem(ModToolMaterials.Phoenixite, -2.5F, 0.1F, (new Item.Settings())));
+            new ModHoeItem(ModToolMaterials.Phoenixite, (new Item.Settings())
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.Phoenixite, -2.5F, 0.1F))));
 
     public static final Item CELESTITE_SWORD = registerItem("celestite_sword",
-            new ModSwordItem(ModToolMaterials.Celestite, 7, -2.45F, (new Item.Settings())));
+            new ModSwordItem(ModToolMaterials.Celestite, (new Item.Settings())
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.Celestite, 7, -2.45F))));
     public static final Item CELESTITE_PICKAXE = registerItem("celestite_pickaxe",
-            new ModPickaxeItem(ModToolMaterials.Celestite, 6.0F, -2.95F, (new Item.Settings())));
+            new ModPickaxeItem(ModToolMaterials.Celestite, (new Item.Settings())
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.Celestite, 6.0F, -2.95F))));
     public static final Item CELESTITE_AXE = registerItem("celestite_axe",
-            new ModAxeItem(ModToolMaterials.Celestite, 11.0F, -3.15F, (new Item.Settings())));
+            new ModAxeItem(ModToolMaterials.Celestite, (new Item.Settings())
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.Celestite, 11.0F, -3.15F))));
     public static final Item CELESTITE_SHOVEL = registerItem("celestite_shovel",
-            new ModShovelItem(ModToolMaterials.Celestite, 4.4F, -3.15F, (new Item.Settings())));
+            new ModShovelItem(ModToolMaterials.Celestite, (new Item.Settings())
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.Celestite, 4.4F, -3.15F))));
     public static final Item CELESTITE_HOE = registerItem("celestite_hoe",
-            new ModHoeItem(ModToolMaterials.Celestite, -1.5F, 0.1F, (new Item.Settings())));
+            new ModHoeItem(ModToolMaterials.Celestite, (new Item.Settings())
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.Celestite,-1.5F, 0.1F))));
 
     public static final Item RUBY_HELMET = registerItem("ruby_helmet",
             new ArmorItem(ModArmorMaterials.Ruby, ArmorItem.Type.HELMET, new Item.Settings()));

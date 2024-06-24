@@ -1,15 +1,15 @@
-// 1.20.2	2024-05-23T16:34:23.6947218	Beyond Horizons/Tags for minecraft:block
-74a44d4152d82e9c6fa19fe846956b8e5af4547d data\minecraft\tags\blocks\mineable\pickaxe.json
-7201293c6141f8bd364c48cdb011a3581778b03e data\beyond-horizons\tags\blocks\leaves.json
-467afc09bae67e3f809eebde7914dccbb616792f data\beyond-horizons\tags\blocks\planks.json
-dbc45bfa30405fe91ad55443c932183a668d6d18 data\minecraft\tags\blocks\needs_iron_tool.json
-6f2197c6fe6657a7538bf4688a9c9fe56bce11e0 data\minecraft\tags\blocks\mineable\axe.json
-53262e57586c72ad4d69848ce4e9ba8ba6cdc654 data\beyond-horizons\tags\blocks\logs.json
-78597035ec67c5ab5483991edfc6d79f169c0675 data\beyond-horizons\tags\blocks\ores.json
-caf8d65022e0464beaea295b08c99243bff81bf2 data\minecraft\tags\blocks\mineable\shovel.json
-994ef6f505d8a3ac8d9f630680a62cede838a8e2 data\minecraft\tags\blocks\needs_stone_tool.json
-25b694a9096e6ba883dd94eedab8623fb8eb1bee data\minecraft\tags\blocks\fences.json
-c6c3b81c83468bb075f32e20261d26880836d1b5 data\minecraft\tags\blocks\needs_diamond_tool.json
-58f65b868a21352a0c6104be28d92be539e4d948 data\beyond-horizons\tags\blocks\multitool.json
-3c20ada01517e0bc309efa2c3d3a778f6ed6a92b data\beyond-horizons\tags\blocks\slabs.json
-6b81055004d1a5b3dacb26c817b4824c60ca6806 data\minecraft\tags\blocks\logs_that_burn.json
+// 1.21	2024-06-24T03:52:05.3580555	Beyond Horizons/Tags for minecraft:block
+072eefa8be49996b612bc3279b7ba3e6de800822 data\beyond-horizons\tags\block\multitool.json
+38724a4ee6b34b8dbc5fd70d15c76ea4af0c950c data\minecraft\tags\block\mineable\shovel.json
+a9c05fdd8247d41085c49b6c9193c9487d34c909 data\minecraft\tags\block\fences.json
+c73a3981534d33a1dced6d5b2860b4f1eee4c531 data\minecraft\tags\block\mineable\axe.json
+9af6fbef6ac7f44a525933709af185e49d44c5b7 data\beyond-horizons\tags\block\planks.json
+17cad99906299a55b2a8d66d67d790d0dac0d039 data\beyond-horizons\tags\block\slabs.json
+2809ec4aefba64daa2bd948cafe0611c1226b686 data\minecraft\tags\block\needs_diamond_tool.json
+a119561db973442ffdfe20ad7b0ca772163dd581 data\minecraft\tags\block\logs_that_burn.json
+a34f66f9ba8ec27c198901bb09924dde68a4ab78 data\minecraft\tags\block\needs_iron_tool.json
+6ebd646ed0eb5cfcbacd1aeeb399132585758376 data\beyond-horizons\tags\block\leaves.json
+a7c2525ebf738f86911250e225a8f042c4667cf5 data\beyond-horizons\tags\block\ores.json
+bd260938e2e24b8c7f6e570dbd93f73f864b6004 data\minecraft\tags\block\mineable\pickaxe.json
+5e81982823a644cdccb42eca0dd2d0596c9f724e data\beyond-horizons\tags\block\logs.json
+630afe0bea4ea59193ddb876eb53f827931d8eb9 data\minecraft\tags\block\needs_stone_tool.json
