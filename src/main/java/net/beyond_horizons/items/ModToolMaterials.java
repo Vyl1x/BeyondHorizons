@@ -34,7 +34,7 @@ public enum ModToolMaterials implements ToolMaterial {
     Mythril(ModTags.Blocks.INCORRECT_FOR_MYTHRIL_TOOL, 4, 1923, 2.0F, 24, () ->
             Ingredient.ofItems(ModItems.MYTHRIL_INGOT)),
 
-    CobaltMT(ModTags.Blocks.INCORRECT_FOR_COBALTMT_TOOL, 5, 5000, 13.0F, 27, () ->
+    CobaltMT(ModTags.Blocks.INCORRECT_FOR_COBALTMT_TOOL, 5, 5000, 3.0F, 27, () ->
             Ingredient.ofItems(ModBlocks.COBALT_BLOCK));
 
     private final TagKey<Block> inverseTag;
