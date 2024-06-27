@@ -505,52 +505,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModItems.RUBY), FabricRecipeProvider.conditionsFromItem(ModItems.RUBY))
                 .offerTo(exporter, Identifier.of(FabricRecipeProvider.getRecipeName(ModItems.RUBY_SHOVEL)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CELESTITE_AXE, 1)
-                .pattern("##")
-                .pattern("#x")
-                .pattern(" x")
-                .input('x', Items.STICK)
-                .input('#', ModBlocks.CELESTITE_BLOCK)
-                .criterion(FabricRecipeProvider.hasItem(Items.STICK), FabricRecipeProvider.conditionsFromItem(Items.STICK))
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.CELESTITE_BLOCK), FabricRecipeProvider.conditionsFromItem(ModBlocks.CELESTITE_BLOCK))
-                .offerTo(exporter, Identifier.of(FabricRecipeProvider.getRecipeName(ModItems.CELESTITE_AXE)));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CELESTITE_SWORD, 1)
-                .pattern("#")
-                .pattern("#")
-                .pattern("x")
-                .input('x', Items.STICK)
-                .input('#', ModBlocks.CELESTITE_BLOCK)
-                .criterion(FabricRecipeProvider.hasItem(Items.STICK), FabricRecipeProvider.conditionsFromItem(Items.STICK))
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.CELESTITE_BLOCK), FabricRecipeProvider.conditionsFromItem(ModBlocks.CELESTITE_BLOCK))
-                .offerTo(exporter, Identifier.of(FabricRecipeProvider.getRecipeName(ModItems.CELESTITE_SWORD)));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CELESTITE_PICKAXE, 1)
-                .pattern("###")
-                .pattern(" x ")
-                .pattern(" x ")
-                .input('x', Items.STICK)
-                .input('#', ModBlocks.CELESTITE_BLOCK)
-                .criterion(FabricRecipeProvider.hasItem(Items.STICK), FabricRecipeProvider.conditionsFromItem(Items.STICK))
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.CELESTITE_BLOCK), FabricRecipeProvider.conditionsFromItem(ModBlocks.CELESTITE_BLOCK))
-                .offerTo(exporter, Identifier.of(FabricRecipeProvider.getRecipeName(ModItems.CELESTITE_PICKAXE)));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CELESTITE_HOE, 1)
-                .pattern("##")
-                .pattern(" x")
-                .pattern(" x")
-                .input('x', Items.STICK)
-                .input('#', ModBlocks.CELESTITE_BLOCK)
-                .criterion(FabricRecipeProvider.hasItem(Items.STICK), FabricRecipeProvider.conditionsFromItem(Items.STICK))
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.CELESTITE_BLOCK), FabricRecipeProvider.conditionsFromItem(ModBlocks.CELESTITE_BLOCK))
-                .offerTo(exporter, Identifier.of(FabricRecipeProvider.getRecipeName(ModItems.CELESTITE_HOE)));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CELESTITE_SHOVEL, 1)
-                .pattern("#")
-                .pattern("x")
-                .pattern("x")
-                .input('x', Items.STICK)
-                .input('#', ModBlocks.CELESTITE_BLOCK)
-                .criterion(FabricRecipeProvider.hasItem(Items.STICK), FabricRecipeProvider.conditionsFromItem(Items.STICK))
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.CELESTITE_BLOCK), FabricRecipeProvider.conditionsFromItem(ModBlocks.CELESTITE_BLOCK))
-                .offerTo(exporter, Identifier.of(FabricRecipeProvider.getRecipeName(ModItems.CELESTITE_SHOVEL)));
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.COBALT_AXE, 1)
                 .pattern("##")
                 .pattern("#x")
@@ -682,33 +636,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModItems.RUBY), FabricRecipeProvider.conditionsFromItem(ModItems.RUBY))
                 .offerTo(exporter, Identifier.of(FabricRecipeProvider.getRecipeName(ModItems.RUBY_BOOTS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.CELESTITE_HELMET, 1)
-                .pattern("###")
-                .pattern("# #")
-                .input('#', ModBlocks.CELESTITE_BLOCK)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.CELESTITE_BLOCK), FabricRecipeProvider.conditionsFromItem(ModBlocks.CELESTITE_BLOCK))
-                .offerTo(exporter, Identifier.of(FabricRecipeProvider.getRecipeName(ModItems.CELESTITE_HELMET)));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.CELESTITE_CHESTPLATE, 1)
-                .pattern("# #")
-                .pattern("###")
-                .pattern("###")
-                .input('#', ModBlocks.CELESTITE_BLOCK)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.CELESTITE_BLOCK), FabricRecipeProvider.conditionsFromItem(ModBlocks.CELESTITE_BLOCK))
-                .offerTo(exporter, Identifier.of(FabricRecipeProvider.getRecipeName(ModItems.CELESTITE_CHESTPLATE)));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.CELESTITE_LEGGINGS, 1)
-                .pattern("###")
-                .pattern("# #")
-                .pattern("# #")
-                .input('#', ModBlocks.CELESTITE_BLOCK)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.CELESTITE_BLOCK), FabricRecipeProvider.conditionsFromItem(ModBlocks.CELESTITE_BLOCK))
-                .offerTo(exporter, Identifier.of(FabricRecipeProvider.getRecipeName(ModItems.CELESTITE_LEGGINGS)));
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.CELESTITE_BOOTS, 1)
-                .pattern("# #")
-                .pattern("# #")
-                .input('#', ModBlocks.CELESTITE_BLOCK)
-                .criterion(FabricRecipeProvider.hasItem(ModBlocks.CELESTITE_BLOCK), FabricRecipeProvider.conditionsFromItem(ModBlocks.CELESTITE_BLOCK))
-                .offerTo(exporter, Identifier.of(FabricRecipeProvider.getRecipeName(ModItems.CELESTITE_BOOTS)));
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.COBALT_HELMET, 1)
                 .pattern("###")
                 .pattern("# #")
@@ -770,6 +697,12 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerEnderiteUpgradeRecipe(exporter, Items.NETHERITE_PICKAXE, RecipeCategory.TOOLS, ModItems.ENDERITE_PICKAXE);
         offerEnderiteUpgradeRecipe(exporter, Items.NETHERITE_HOE, RecipeCategory.TOOLS, ModItems.ENDERITE_HOE);
 
+        offerCelestiteUpgradeRecipe(exporter, ModItems.ENDERITE_SHOVEL, RecipeCategory.TOOLS, ModItems.CELESTITE_SHOVEL);
+        offerCelestiteUpgradeRecipe(exporter, ModItems.ENDERITE_AXE, RecipeCategory.TOOLS, ModItems.CELESTITE_AXE);
+        offerCelestiteUpgradeRecipe(exporter, ModItems.ENDERITE_SWORD, RecipeCategory.TOOLS, ModItems.CELESTITE_SWORD);
+        offerCelestiteUpgradeRecipe(exporter, ModItems.ENDERITE_PICKAXE, RecipeCategory.TOOLS, ModItems.CELESTITE_PICKAXE);
+        offerCelestiteUpgradeRecipe(exporter, ModItems.ENDERITE_HOE, RecipeCategory.TOOLS, ModItems.CELESTITE_HOE);
+
         offerPhoenixiteUpgradeRecipe(exporter, Items.NETHERITE_SHOVEL, RecipeCategory.TOOLS, ModItems.PHOENIXITE_SHOVEL);
         offerPhoenixiteUpgradeRecipe(exporter, Items.NETHERITE_AXE, RecipeCategory.TOOLS, ModItems.PHOENIXITE_AXE);
         offerPhoenixiteUpgradeRecipe(exporter, Items.NETHERITE_SWORD, RecipeCategory.TOOLS, ModItems.PHOENIXITE_SWORD);
@@ -787,6 +720,11 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerEnderiteUpgradeRecipe(exporter, Items.NETHERITE_CHESTPLATE, RecipeCategory.COMBAT, ModItems.ENDERITE_CHESTPLATE);
         offerEnderiteUpgradeRecipe(exporter, Items.NETHERITE_LEGGINGS, RecipeCategory.COMBAT, ModItems.ENDERITE_LEGGINGS);
         offerEnderiteUpgradeRecipe(exporter, Items.NETHERITE_BOOTS, RecipeCategory.COMBAT, ModItems.ENDERITE_BOOTS);
+
+        offerCelestiteUpgradeRecipe(exporter, ModItems.ENDERITE_HELMET, RecipeCategory.COMBAT, ModItems.CELESTITE_HELMET);
+        offerCelestiteUpgradeRecipe(exporter, ModItems.ENDERITE_CHESTPLATE, RecipeCategory.COMBAT, ModItems.CELESTITE_CHESTPLATE);
+        offerCelestiteUpgradeRecipe(exporter, ModItems.ENDERITE_LEGGINGS, RecipeCategory.COMBAT, ModItems.CELESTITE_LEGGINGS);
+        offerCelestiteUpgradeRecipe(exporter, ModItems.ENDERITE_BOOTS, RecipeCategory.COMBAT, ModItems.CELESTITE_BOOTS);
         
         offerPhoenixiteUpgradeRecipe(exporter, Items.NETHERITE_HELMET, RecipeCategory.COMBAT, ModItems.PHOENIXITE_HELMET);
         offerPhoenixiteUpgradeRecipe(exporter, Items.NETHERITE_CHESTPLATE, RecipeCategory.COMBAT, ModItems.PHOENIXITE_CHESTPLATE);
@@ -874,12 +812,14 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, Identifier.of(FabricRecipeProvider.getRecipeName(ModItems.PHOENIXITE_INGOT)));
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DIMENSIONAL_TEMPLATE, 1)
                 .pattern("#e#")
-                .pattern("#e#")
+                .pattern("#i#")
                 .pattern("###")
                 .input('#', ModItems.CELESTITE_INGOT)
                 .input('e', Blocks.EMERALD_BLOCK)
+                .input('i', Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.CELESTITE_INGOT), FabricRecipeProvider.conditionsFromItem(ModItems.CELESTITE_INGOT))
                 .criterion(FabricRecipeProvider.hasItem(Blocks.EMERALD_BLOCK), FabricRecipeProvider.conditionsFromItem(Blocks.EMERALD_BLOCK))
+                .criterion(FabricRecipeProvider.hasItem(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE), FabricRecipeProvider.conditionsFromItem(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE))
                 .offerTo(exporter, Identifier.of(FabricRecipeProvider.getRecipeName(ModItems.DIMENSIONAL_TEMPLATE)));
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.TORCH, 4)
                 .pattern("#")
@@ -892,6 +832,9 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
     }
 
     public static void offerEnderiteUpgradeRecipe(RecipeExporter exporter, Item input, RecipeCategory category, Item result) {
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.DIMENSIONAL_TEMPLATE), Ingredient.ofItems(input), Ingredient.ofItems(ModItems.ENDERITE_INGOT), category, result).criterion("has_dimensional_trim", RecipeProvider.conditionsFromItem(ModItems.ENDERITE_INGOT)).offerTo(exporter, RecipeProvider.getItemPath(result) + "_smithing_trim");
+    }
+    public static void offerCelestiteUpgradeRecipe(RecipeExporter exporter, Item input, RecipeCategory category, Item result) {
         SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.DIMENSIONAL_TEMPLATE), Ingredient.ofItems(input), Ingredient.ofItems(ModItems.ENDERITE_INGOT), category, result).criterion("has_dimensional_trim", RecipeProvider.conditionsFromItem(ModItems.ENDERITE_INGOT)).offerTo(exporter, RecipeProvider.getItemPath(result) + "_smithing_trim");
     }
     
