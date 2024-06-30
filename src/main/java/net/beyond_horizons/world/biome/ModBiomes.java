@@ -15,6 +15,11 @@ import net.minecraft.world.biome.GenerationSettings;
 import net.minecraft.world.biome.SpawnSettings;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
+import net.minecraft.world.gen.feature.MiscPlacedFeatures;
+import net.minecraft.world.gen.feature.NetherPlacedFeatures;
+import terrablender.api.EndBiomeRegistry;
+
+import static net.fabricmc.fabric.api.biome.v1.BiomeModifications.addFeature;
 
 public class ModBiomes {
     public static final RegistryKey<Biome> JADESFOREST_BIOME = RegistryKey.of(RegistryKeys.BIOME,
@@ -49,6 +54,7 @@ public class ModBiomes {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
 
         spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.SNIFFER, 3, 1, 2));
+        spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.BOGGED, 6, 1, 3));
 
         DefaultBiomeFeatures.addFarmAnimals(spawnBuilder);
         DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
@@ -59,7 +65,6 @@ public class ModBiomes {
 
         globalOverworldGeneration(biomeBuilder);
         DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
-        DefaultBiomeFeatures.addExtraGoldOre(biomeBuilder);
 
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.JUNGLEJADE_PLACED_KEY);
         DefaultBiomeFeatures.addForestFlowers(biomeBuilder);
@@ -77,52 +82,42 @@ public class ModBiomes {
                 .effects((new BiomeEffects.Builder())
                         .waterColor(0x25c7b4)
                         .waterFogColor(0x60b7bf)
-                        .skyColor(0x68c725)
-                        .grassColor(0x1aed6b)
-                        .foliageColor(0x129628)
-                        .fogColor(0x88d361)
+                        .skyColor(0x6fd32e)
+                        .grassColor(0x1beb60)
+                        .foliageColor(0x16a12d)
+                        .fogColor(0x86ee6d)
                         .moodSound(BiomeMoodSound.CAVE).build())
                 .build();
     }
 
     public static Biome ShadowLandsBiome(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
-
-        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.ZOMBIFIED_PIGLIN, 15, 1, 3));
-
-        DefaultBiomeFeatures.addFarmAnimals(spawnBuilder);
-        DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
+        spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.ZOMBIFIED_PIGLIN, 15, 1, 3));
+        spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.BLAZE, 7, 1, 5));
+        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.STRIDER, 9, 1, 3));
 
         GenerationSettings.LookupBackedBuilder biomeBuilder =
                 new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
                         context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
 
-        globalOverworldGeneration(biomeBuilder);
-        DefaultBiomeFeatures.addMossyRocks(biomeBuilder);
-        DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
-        DefaultBiomeFeatures.addExtraGoldOre(biomeBuilder);
-
+        biomeBuilder.feature(GenerationStep.Feature.UNDERGROUND_DECORATION, NetherPlacedFeatures.GLOWSTONE);
+        DefaultBiomeFeatures.addNetherMineables(biomeBuilder);
+        biomeBuilder.feature(GenerationStep.Feature.UNDERGROUND_DECORATION, NetherPlacedFeatures.BASALT_PILLAR);
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SHADOWONYXBLOODFLAME_PLACED_KEY);
-        DefaultBiomeFeatures.addForestFlowers(biomeBuilder);
-        DefaultBiomeFeatures.addLargeFerns(biomeBuilder);
-
-        DefaultBiomeFeatures.addDefaultMushrooms(biomeBuilder);
-        DefaultBiomeFeatures.addDefaultVegetation(biomeBuilder);
 
         return new Biome.Builder()
-                .precipitation(true)
-                .downfall(0.2f)
-                .temperature(1.7f)
+                .precipitation(false)
+                .temperature(2.0f)
+                .downfall(0.0f)
                 .generationSettings(biomeBuilder.build())
                 .spawnSettings(spawnBuilder.build())
-                .effects((new BiomeEffects.Builder())
-                        .waterColor(0x541818)
-                        .waterFogColor(0xeb6464)
-                        .skyColor(0xa60a0a)
-                        .grassColor(0xd44c4c)
-                        .foliageColor(0x141313)
-                        .fogColor(0x0d0d0d)
-                        .moodSound(BiomeMoodSound.CAVE).build())
+                .effects(new BiomeEffects.Builder()
+                        .skyColor(0xbb1111)
+                        .fogColor(0x573333)
+                        .waterColor(0x2389da)
+                        .waterFogColor(0x2389da)
+                        .moodSound(BiomeMoodSound.CAVE)
+                        .build())
                 .build();
     }
 
@@ -139,7 +134,6 @@ public class ModBiomes {
         globalOverworldGeneration(biomeBuilder);
         DefaultBiomeFeatures.addMossyRocks(biomeBuilder);
         DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
-        DefaultBiomeFeatures.addExtraGoldOre(biomeBuilder);
 
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.DARKFIRE_PLACED_KEY);
         DefaultBiomeFeatures.addForestFlowers(biomeBuilder);
@@ -157,10 +151,10 @@ public class ModBiomes {
                 .effects((new BiomeEffects.Builder())
                         .waterColor(0x333c3d)
                         .waterFogColor(0x111c1f)
-                        .skyColor(0x282b2b)
+                        .skyColor(0x280909)
                         .grassColor(0x3d3d3d)
                         .foliageColor(0x090a0a)
-                        .fogColor(0x1a1a1a)
+                        .fogColor(0x3e2121)
                         .moodSound(BiomeMoodSound.CAVE).build())
                 .build();
     }
@@ -168,7 +162,7 @@ public class ModBiomes {
     public static Biome ColdenAspenBiome(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
 
-        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.WOLF, 3, 1, 3));
+        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.GLOW_SQUID, 6, 2, 6));
 
         DefaultBiomeFeatures.addFarmAnimals(spawnBuilder);
         DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
@@ -181,7 +175,6 @@ public class ModBiomes {
         DefaultBiomeFeatures.addMossyRocks(biomeBuilder);
         DefaultBiomeFeatures.addBlueIce(biomeBuilder);
         DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
-        DefaultBiomeFeatures.addExtraGoldOre(biomeBuilder);
 
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.CRYSTALASPEN_PLACED_KEY);
         DefaultBiomeFeatures.addForestFlowers(biomeBuilder);
@@ -209,43 +202,28 @@ public class ModBiomes {
 
     public static Biome ShadyNightBiome(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
-
-        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.WOLF, 3, 1, 3));
-
-        DefaultBiomeFeatures.addFarmAnimals(spawnBuilder);
-        DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
+        spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.ENDERMAN, 10, 1, 4));
 
         GenerationSettings.LookupBackedBuilder biomeBuilder =
                 new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
                         context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
 
-        globalOverworldGeneration(biomeBuilder);
-        DefaultBiomeFeatures.addMossyRocks(biomeBuilder);
-        DefaultBiomeFeatures.addBlueIce(biomeBuilder);
-        DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
-        DefaultBiomeFeatures.addExtraGoldOre(biomeBuilder);
-
+        // Assuming you have end-specific features to add, otherwise adapt overworld features as needed
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.NIGHTSHADEGROVE_PLACED_KEY);
-        DefaultBiomeFeatures.addForestFlowers(biomeBuilder);
-        DefaultBiomeFeatures.addLargeFerns(biomeBuilder);
-
-        DefaultBiomeFeatures.addDefaultMushrooms(biomeBuilder);
-        DefaultBiomeFeatures.addDefaultVegetation(biomeBuilder);
 
         return new Biome.Builder()
-                .precipitation(true)
-                .downfall(0.7F)
-                .temperature(0.2f)
-                .generationSettings(biomeBuilder.build())
-                .spawnSettings(spawnBuilder.build())
-                .effects((new BiomeEffects.Builder())
+                .precipitation(false)
+                .downfall(0.0f)
+                .temperature(0.5f)
+                .effects(new BiomeEffects.Builder()
+                        .skyColor(0x781cdc)
+                        .fogColor(0x270546)
                         .waterColor(0x4e158a)
                         .waterFogColor(0x1c0833)
-                        .skyColor(0x7651cf)
-                        .grassColor(0x380e78)
-                        .foliageColor(0x46076e)
-                        .fogColor(0x170330)
-                        .moodSound(BiomeMoodSound.CAVE).build())
+                        .moodSound(BiomeMoodSound.CAVE)
+                        .build())
+                .generationSettings(biomeBuilder.build())
+                .spawnSettings(spawnBuilder.build())
                 .build();
     }
 }

@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:mythril_hoe"
+        "recipe": "beyond-horizons:mythril_hoe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:mythril_hoe"
+      "beyond-horizons:mythril_hoe"
     ]
   }
 }

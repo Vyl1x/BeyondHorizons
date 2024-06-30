@@ -60,6 +60,13 @@ public class ModItemGroup {
                         entries.add(ModItems.CELESTITE_BOOTS);
 
                         //Tools
+                        entries.add(ModItems.WOODEN_MULTI_TOOL);
+                        entries.add(ModItems.STONE_MULTI_TOOL);
+                        entries.add(ModItems.GOLD_MULTI_TOOL);
+                        entries.add(ModItems.IRON_MULTI_TOOL);
+                        entries.add(ModItems.DIAMOND_MULTI_TOOL);
+                        entries.add(ModItems.NETHERITE_MULTI_TOOL);
+                        entries.add(ModItems.RUBY_MULTI_TOOL);
                         entries.add(ModItems.RUBY_SWORD);
                         entries.add(ModItems.RUBY_AXE);
                         entries.add(ModItems.RUBY_PICKAXE);
@@ -72,21 +79,25 @@ public class ModItemGroup {
                         entries.add(ModItems.COBALT_SHOVEL);
                         entries.add(ModItems.COBALT_HOE);
                         entries.add(ModItems.COBALT_BOW);
+                        entries.add(ModItems.MYTHRIL_MULTI_TOOL);
                         entries.add(ModItems.MYTHRIL_SWORD);
                         entries.add(ModItems.MYTHRIL_AXE);
                         entries.add(ModItems.MYTHRIL_PICKAXE);
                         entries.add(ModItems.MYTHRIL_SHOVEL);
                         entries.add(ModItems.MYTHRIL_HOE);
+                        entries.add(ModItems.PHOENIXITE_MULTI_TOOL);
                         entries.add(ModItems.PHOENIXITE_SWORD);
                         entries.add(ModItems.PHOENIXITE_AXE);
                         entries.add(ModItems.PHOENIXITE_PICKAXE);
                         entries.add(ModItems.PHOENIXITE_SHOVEL);
                         entries.add(ModItems.PHOENIXITE_HOE);
+                        entries.add(ModItems.ENDERITE_MULTI_TOOL);
                         entries.add(ModItems.ENDERITE_SWORD);
                         entries.add(ModItems.ENDERITE_AXE);
                         entries.add(ModItems.ENDERITE_PICKAXE);
                         entries.add(ModItems.ENDERITE_SHOVEL);
                         entries.add(ModItems.ENDERITE_HOE);
+                        entries.add(ModItems.CELESTITE_MULTI_TOOL);
                         entries.add(ModItems.CELESTITE_SWORD);
                         entries.add(ModItems.CELESTITE_AXE);
                         entries.add(ModItems.CELESTITE_PICKAXE);

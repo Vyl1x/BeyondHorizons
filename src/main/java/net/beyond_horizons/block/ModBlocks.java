@@ -198,9 +198,9 @@ public class ModBlocks {
                     Optional.of(ModConfiguredFeatures.CRYSTALASPEN_KEY), Optional.empty()),
                     AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
     public static final Block SHADOWONYXBLOODFLAME_SAPLING = registerBlocks("shadowonyxbloodflame_sapling",
-            new SaplingBlock(new SaplingGenerator("shadowonyxbloodflame", Optional.empty(),
+            new ModSaplingBlock(new SaplingGenerator("shadowonyxbloodflame", Optional.empty(),
                     Optional.of(ModConfiguredFeatures.SHADOWONYXBLOODFLAME_KEY), Optional.empty()),
-                    AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+                    AbstractBlock.Settings.copy(Blocks.OAK_SAPLING), () -> Blocks.NETHERRACK));
     public static final Block DARKFIRE_SAPLING = registerBlocks("darkfire_sapling",
             new SaplingBlock(new SaplingGenerator("darkfire", Optional.empty(),
                     Optional.of(ModConfiguredFeatures.DARKFIRE_KEY), Optional.empty()),
@@ -208,7 +208,7 @@ public class ModBlocks {
 
     /** ENDSTONE **/
     public static final Block NIGHTSHADEGROVE_END_STONE = registerBlocks("nightshadegrove_end_stone",
-            new Block(AbstractBlock.Settings.copy(Blocks.END_STONE).strength(0.2F, 4.0F).requiresTool()));
+            new Block(AbstractBlock.Settings.copy(Blocks.END_STONE).strength(2.2F, 7.0F).requiresTool()));
 
 
     /** ORES **/
@@ -219,17 +219,14 @@ public class ModBlocks {
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 6),
                     AbstractBlock.Settings.copy(Blocks.STONE).strength(3.0f, 3.0F).requiresTool()));
     public static final Block PHOENIXITE_ORE = registerBlocks("phoenixite_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(2, 6),
-                    AbstractBlock.Settings.copy(Blocks.NETHERRACK).strength(6.35F, 12000.0F).requiresTool()));
+            new Block(AbstractBlock.Settings.copy(Blocks.NETHERRACK).strength(6.35F, 12000.0F).requiresTool()));
     public static final Block ENDERITE_ORE = registerBlocks("enderite_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(2, 6),
-                    AbstractBlock.Settings.copy(Blocks.END_STONE).strength(6.35F, 12000.0F).requiresTool()));
+            new Block(AbstractBlock.Settings.copy(Blocks.END_STONE).strength(8.35F, 12000.0F).requiresTool()));
     public static final Block ENDERITE_COAL_ORE = registerBlocks("enderite_coal_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 6),
-                    AbstractBlock.Settings.copy(Blocks.END_STONE).strength(3.25F, 3.0F).requiresTool()));
+                    AbstractBlock.Settings.copy(Blocks.END_STONE).strength(4.25F, 3.0F).requiresTool()));
     public static final Block CELESTITE_ORE = registerBlocks("celestite_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(2, 6),
-                    AbstractBlock.Settings.copy(Blocks.END_STONE).strength(12.0F, 12000.0F).requiresTool()));
+            new Block(AbstractBlock.Settings.copy(Blocks.END_STONE).strength(12.0F, 12000.0F).requiresTool()));
     public static final Block COBALT_ORE = registerBlocks("cobalt_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 6),
                     AbstractBlock.Settings.copy(Blocks.STONE).strength(3.25F, 3.0F).requiresTool()));

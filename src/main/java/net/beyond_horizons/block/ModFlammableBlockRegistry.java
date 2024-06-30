@@ -37,12 +37,9 @@ public class ModFlammableBlockRegistry {
         registry.add(ModBlocks.DARKFIRE_LEAVES, 30, 60);
         registry.add(ModBlocks.DARKFIRE_PLANKS, 5, 20);
 
-        registry.add(ModBlocks.SHADOWONYXBLOODFLAME_LOG, 5, 5);
         registry.add(ModBlocks.SHADOWONYXBLOODFLAME_WOOD, 5, 5);
         registry.add(ModBlocks.STRIPPED_SHADOWONYXBLOODFLAME_LOG, 5, 5);
         registry.add(ModBlocks.STRIPPED_SHADOWONYXBLOODFLAME_WOOD, 5, 5);
-        registry.add(ModBlocks.SHADOWONYXBLOODFLAME_LEAVES, 30, 60);
         registry.add(ModBlocks.SHADOWONYXBLOODFLAME_PLANKS, 5, 20);
-
     }
 }

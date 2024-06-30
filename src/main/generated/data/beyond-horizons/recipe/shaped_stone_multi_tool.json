@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "tag": "minecraft:stone_tool_materials"
+    },
+    "o": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "x": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#o#",
+    "#x#",
+    " x "
+  ],
+  "result": {
+    "count": 1,
+    "id": "beyond-horizons:stone_multi_tool"
+  }
+}

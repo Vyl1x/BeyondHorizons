@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:amulet_of_the_tiger"
+        "recipe": "beyond-horizons:amulet_of_the_tiger"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -48,7 +48,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:amulet_of_the_tiger"
+      "beyond-horizons:amulet_of_the_tiger"
     ]
   }
 }

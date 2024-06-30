@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:junglejade_slab"
+        "recipe": "beyond-horizons:junglejade_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:junglejade_slab"
+      "beyond-horizons:junglejade_slab"
     ]
   }
 }

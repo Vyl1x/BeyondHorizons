@@ -8,7 +8,7 @@
   },
   "downfall": 0.3,
   "effects": {
-    "fog_color": 1710618,
+    "fog_color": 4071713,
     "foliage_color": 592394,
     "grass_color": 4013373,
     "mood_sound": {
@@ -17,7 +17,7 @@
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000
     },
-    "sky_color": 2632491,
+    "sky_color": 2623753,
     "water_color": 3357757,
     "water_fog_color": 1121311
   },
@@ -63,8 +63,7 @@
       "minecraft:ore_lapis",
       "minecraft:ore_lapis_buried",
       "minecraft:ore_copper",
-      "minecraft:underwater_magma",
-      "minecraft:ore_gold_extra"
+      "minecraft:underwater_magma"
     ],
     [],
     [

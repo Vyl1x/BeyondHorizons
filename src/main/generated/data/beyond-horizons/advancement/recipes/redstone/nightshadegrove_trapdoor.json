@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:nightshadegrove_trapdoor"
+        "recipe": "beyond-horizons:nightshadegrove_trapdoor"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:nightshadegrove_trapdoor"
+      "beyond-horizons:nightshadegrove_trapdoor"
     ]
   }
 }

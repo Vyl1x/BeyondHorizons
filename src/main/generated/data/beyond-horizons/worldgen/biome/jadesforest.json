@@ -8,16 +8,16 @@
   },
   "downfall": 0.5,
   "effects": {
-    "fog_color": 8967009,
-    "foliage_color": 1218088,
-    "grass_color": 1764715,
+    "fog_color": 8842861,
+    "foliage_color": 1483053,
+    "grass_color": 1829728,
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2.0,
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000
     },
-    "sky_color": 6866725,
+    "sky_color": 7328558,
     "water_color": 2475956,
     "water_fog_color": 6338495
   },
@@ -62,8 +62,7 @@
       "minecraft:ore_lapis",
       "minecraft:ore_lapis_buried",
       "minecraft:ore_copper",
-      "minecraft:underwater_magma",
-      "minecraft:ore_gold_extra"
+      "minecraft:underwater_magma"
     ],
     [],
     [
@@ -130,6 +129,12 @@
     ],
     "misc": [],
     "monster": [
+      {
+        "type": "minecraft:bogged",
+        "maxCount": 3,
+        "minCount": 1,
+        "weight": 6
+      },
       {
         "type": "minecraft:spider",
         "maxCount": 4,

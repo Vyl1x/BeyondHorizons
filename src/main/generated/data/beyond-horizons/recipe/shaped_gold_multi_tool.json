@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:gold_ingot"
+    },
+    "o": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "x": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#o#",
+    "#x#",
+    " x "
+  ],
+  "result": {
+    "count": 1,
+    "id": "beyond-horizons:gold_multi_tool"
+  }
+}

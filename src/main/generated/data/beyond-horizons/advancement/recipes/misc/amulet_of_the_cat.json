@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:amulet_of_the_cat"
+        "recipe": "beyond-horizons:amulet_of_the_cat"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -48,7 +48,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:amulet_of_the_cat"
+      "beyond-horizons:amulet_of_the_cat"
     ]
   }
 }

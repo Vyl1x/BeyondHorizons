@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:mythril_sword"
+        "recipe": "beyond-horizons:mythril_sword"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:mythril_sword"
+      "beyond-horizons:mythril_sword"
     ]
   }
 }

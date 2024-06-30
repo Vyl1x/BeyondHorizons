@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_celestite_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "beyond-horizons:celestite_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_dimensional_template": {
+      "conditions": {
+        "items": [
+          {
+            "items": "beyond-horizons:dimensional_template"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_end_stone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:end_stone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "beyond-horizons:shaped_dimensional_template_2"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_celestite_ingot",
+      "has_end_stone",
+      "has_dimensional_template"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "beyond-horizons:shaped_dimensional_template_2"
+    ]
+  }
+}

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:nightshadegrove_slab"
+        "recipe": "beyond-horizons:nightshadegrove_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:nightshadegrove_slab"
+      "beyond-horizons:nightshadegrove_slab"
     ]
   }
 }

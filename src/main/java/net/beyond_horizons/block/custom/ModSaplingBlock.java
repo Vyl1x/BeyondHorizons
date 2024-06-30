@@ -10,7 +10,6 @@ import net.minecraft.world.BlockView;
 import java.util.function.Supplier;
 
 public class ModSaplingBlock extends SaplingBlock {
-
     private final Supplier<Block> ground;
     public ModSaplingBlock(SaplingGenerator generator, Settings settings, Supplier<Block> ground) {
         super(generator, settings);

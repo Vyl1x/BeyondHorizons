@@ -33,8 +33,53 @@ public class ModArmorMaterial {
             18,
             SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,
             0.5F,
-            0.05F,
+            0.015F,
             () -> Ingredient.ofItems(ModItems.RUBY)
+    );
+    public static final RegistryEntry<ArmorMaterial> Cobalt = ModArmorMaterial.register(
+            BeyondHorizons.identifier("cobalt").toString(),
+            Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.HELMET, 5);
+                map.put(ArmorItem.Type.CHESTPLATE, 10);
+                map.put(ArmorItem.Type.LEGGINGS, 8);
+                map.put(ArmorItem.Type.BOOTS, 4);
+                map.put(ArmorItem.Type.BODY, 11);
+            }),
+            21,
+            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,
+            1.5f,
+            0.025f,
+            () -> Ingredient.ofItems(ModItems.COBALT_INGOT)
+    );
+    public static final RegistryEntry<ArmorMaterial> Mythril = ModArmorMaterial.register(
+            BeyondHorizons.identifier("mythril").toString(),
+            Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.HELMET, 5);
+                map.put(ArmorItem.Type.CHESTPLATE, 12);
+                map.put(ArmorItem.Type.LEGGINGS, 9);
+                map.put(ArmorItem.Type.BOOTS, 5);
+                map.put(ArmorItem.Type.BODY, 11);
+            }),
+            21,
+            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,
+            2.0f,
+            0.035f,
+            () -> Ingredient.ofItems(ModItems.MYTHRIL_INGOT)
+    );
+    public static final RegistryEntry<ArmorMaterial> Phoenixite = ModArmorMaterial.register(
+            BeyondHorizons.identifier("phoenixite").toString(),
+            Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.HELMET, 5);
+                map.put(ArmorItem.Type.CHESTPLATE, 11);
+                map.put(ArmorItem.Type.LEGGINGS, 8);
+                map.put(ArmorItem.Type.BOOTS, 5);
+                map.put(ArmorItem.Type.BODY, 11);
+            }),
+            21,
+            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,
+            2.5F,
+            0.125F,
+            () -> Ingredient.ofItems(ModItems.PHOENIXITE_INGOT)
     );
     public static final RegistryEntry<ArmorMaterial> Enderite = ModArmorMaterial.register(
             BeyondHorizons.identifier("enderite").toString(),
@@ -48,24 +93,8 @@ public class ModArmorMaterial {
             21,
             SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,
             2.5F,
-            0.25F,
+            0.15F,
             () -> Ingredient.ofItems(ModItems.ENDERITE_INGOT)
-    );
-
-    public static final RegistryEntry<ArmorMaterial> Phoenixite = ModArmorMaterial.register(
-            BeyondHorizons.identifier("phoenixite").toString(),
-            Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
-                map.put(ArmorItem.Type.HELMET, 5);
-                map.put(ArmorItem.Type.CHESTPLATE, 11);
-                map.put(ArmorItem.Type.LEGGINGS, 8);
-                map.put(ArmorItem.Type.BOOTS, 5);
-                map.put(ArmorItem.Type.BODY, 11);
-            }),
-            21,
-            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,
-            2.5F,
-            0.45F,
-            () -> Ingredient.ofItems(ModItems.PHOENIXITE_INGOT)
     );
     public static final RegistryEntry<ArmorMaterial> Celestite = ModArmorMaterial.register(
             BeyondHorizons.identifier("celestite").toString(),
@@ -79,40 +108,8 @@ public class ModArmorMaterial {
             21,
             SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,
             2.5f,
-            1.5f,
+            0.175f,
             () -> Ingredient.ofItems(ModItems.CELESTITE_INGOT)
-    );
-
-    public static final RegistryEntry<ArmorMaterial> Cobalt = ModArmorMaterial.register(
-            BeyondHorizons.identifier("cobalt").toString(),
-            Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
-                map.put(ArmorItem.Type.HELMET, 5);
-                map.put(ArmorItem.Type.CHESTPLATE, 10);
-                map.put(ArmorItem.Type.LEGGINGS, 8);
-                map.put(ArmorItem.Type.BOOTS, 4);
-                map.put(ArmorItem.Type.BODY, 11);
-            }),
-            21,
-            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,
-            1.5f,
-            0.05f,
-            () -> Ingredient.ofItems(ModItems.COBALT_INGOT)
-    );
-
-    public static final RegistryEntry<ArmorMaterial> Mythril = ModArmorMaterial.register(
-            BeyondHorizons.identifier("mythril").toString(),
-            Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
-                map.put(ArmorItem.Type.HELMET, 5);
-                map.put(ArmorItem.Type.CHESTPLATE, 12);
-                map.put(ArmorItem.Type.LEGGINGS, 9);
-                map.put(ArmorItem.Type.BOOTS, 5);
-                map.put(ArmorItem.Type.BODY, 11);
-            }),
-            21,
-            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC,
-            2.0f,
-            0.15f,
-            () -> Ingredient.ofItems(ModItems.MYTHRIL_INGOT)
     );
 
     private final RegistryEntry<ArmorMaterial> internal;

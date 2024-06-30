@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "beyond-horizons:celestite_ingot"
+  },
+  "base": {
+    "item": "beyond-horizons:phoenixite_leggings"
+  },
+  "result": {
+    "count": 1,
+    "id": "beyond-horizons:celestite_leggings"
+  },
+  "template": {
+    "item": "beyond-horizons:dimensional_template"
+  }
+}

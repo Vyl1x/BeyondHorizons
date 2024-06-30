@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:darkfire_stairs"
+        "recipe": "beyond-horizons:darkfire_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:darkfire_stairs"
+      "beyond-horizons:darkfire_stairs"
     ]
   }
 }

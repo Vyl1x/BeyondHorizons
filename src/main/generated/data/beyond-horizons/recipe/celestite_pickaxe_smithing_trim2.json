@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "beyond-horizons:celestite_ingot"
+  },
+  "base": {
+    "item": "beyond-horizons:phoenixite_pickaxe"
+  },
+  "result": {
+    "count": 1,
+    "id": "beyond-horizons:celestite_pickaxe"
+  },
+  "template": {
+    "item": "beyond-horizons:dimensional_template"
+  }
+}

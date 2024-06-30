@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_selected_template": {
+      "conditions": {
+        "items": [
+          {
+            "items": "beyond-horizons:celestite_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:celestite_pickaxe_smithing_trim1"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_selected_template"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:celestite_pickaxe_smithing_trim1"
+    ]
+  }
+}

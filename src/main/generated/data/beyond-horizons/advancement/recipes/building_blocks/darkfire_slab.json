@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:darkfire_slab"
+        "recipe": "beyond-horizons:darkfire_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:darkfire_slab"
+      "beyond-horizons:darkfire_slab"
     ]
   }
 }

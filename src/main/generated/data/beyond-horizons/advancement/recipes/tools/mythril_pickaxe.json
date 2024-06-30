@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:mythril_pickaxe"
+        "recipe": "beyond-horizons:mythril_pickaxe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:mythril_pickaxe"
+      "beyond-horizons:mythril_pickaxe"
     ]
   }
 }

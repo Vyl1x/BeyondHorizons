@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:ruby_hoe"
+        "recipe": "beyond-horizons:ruby_hoe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:ruby_hoe"
+      "beyond-horizons:ruby_hoe"
     ]
   }
 }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "beyond-horizons:celestite_ingot"
+  },
+  "base": {
+    "item": "beyond-horizons:enderite_axe"
+  },
+  "result": {
+    "count": 1,
+    "id": "beyond-horizons:celestite_axe"
+  },
+  "template": {
+    "item": "beyond-horizons:dimensional_template"
+  }
+}

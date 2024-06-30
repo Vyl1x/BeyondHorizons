@@ -1,0 +1,28 @@
+{
+  "values": [
+    "beyond-horizons:ruby_multi_tool",
+    "beyond-horizons:enderite_multi_tool",
+    "beyond-horizons:phoenixite_multi_tool",
+    "beyond-horizons:celestite_multi_tool",
+    "beyond-horizons:cobalt_multi_tool",
+    "beyond-horizons:mythril_multi_tool",
+    "beyond-horizons:wooden_multi_tool",
+    "beyond-horizons:stone_multi_tool",
+    "beyond-horizons:gold_multi_tool",
+    "beyond-horizons:iron_multi_tool",
+    "beyond-horizons:diamond_multi_tool",
+    "beyond-horizons:netherite_multi_tool",
+    "beyond-horizons:ruby_sword",
+    "beyond-horizons:phoenixite_sword",
+    "beyond-horizons:celestite_sword",
+    "beyond-horizons:cobalt_sword",
+    "beyond-horizons:enderite_sword",
+    "beyond-horizons:mythril_sword",
+    "beyond-horizons:ruby_axe",
+    "beyond-horizons:phoenixite_axe",
+    "beyond-horizons:celestite_axe",
+    "beyond-horizons:cobalt_axe",
+    "beyond-horizons:enderite_axe",
+    "beyond-horizons:mythril_axe"
+  ]
+}

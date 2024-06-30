@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:ruby_shovel"
+        "recipe": "beyond-horizons:ruby_shovel"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:ruby_shovel"
+      "beyond-horizons:ruby_shovel"
     ]
   }
 }

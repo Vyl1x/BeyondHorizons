@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "beyond-horizons:cobalt_ingot"
+    },
+    "o": {
+      "item": "minecraft:string"
+    },
+    "x": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "xo ",
+    "x#o",
+    "xo "
+  ],
+  "result": {
+    "count": 1,
+    "id": "beyond-horizons:cobalt_bow"
+  }
+}

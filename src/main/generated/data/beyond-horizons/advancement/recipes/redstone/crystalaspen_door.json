@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:crystalaspen_door"
+        "recipe": "beyond-horizons:crystalaspen_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:crystalaspen_door"
+      "beyond-horizons:crystalaspen_door"
     ]
   }
 }

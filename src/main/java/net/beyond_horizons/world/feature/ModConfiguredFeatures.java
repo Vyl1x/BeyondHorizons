@@ -10,6 +10,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
@@ -19,6 +20,8 @@ import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.placementmodifier.BiomePlacementModifier;
+import net.minecraft.world.gen.placementmodifier.CountPlacementModifier;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
@@ -35,7 +38,6 @@ public class ModConfiguredFeatures {
 
     //Ore
     public static final RegistryKey<ConfiguredFeature<?, ?>> RUBY_ORE_KEY = registerKey("ruby_ore");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> CRYSTAL_ORE_KEY = registerKey("crystal_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> COBALT_ORE_KEY = registerKey("cobalt_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> MYTHRIL_ORE_KEY = registerKey("mythril_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PHOENIXITE_ORE_KEY = registerKey("phoenixite_ore");
@@ -43,18 +45,10 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> ENDERITE_COAL_RUBY_ORE_KEY = registerKey("enderite_coal_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CELESTITE_ORE_KEY = registerKey("celestite_ore");
 
-    //TERRAIN //BIOME
-    public static final RegistryKey<ConfiguredFeature<?, ?>> RICH_CRYSTAL_ORE_KEY = registerKey("rich_crystal_ore");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> MAGMA_KEY = registerKey("magma_key");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> OBSIDIAN_KEY = registerKey("obsidian_key");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> CRYING_OBSIDIAN_KEY = registerKey("crying_obsidian_key");
-
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
-        RuleTest blue_iceReplaceables = new BlockMatchRuleTest(Blocks.BLUE_ICE);
-        RuleTest snowReplaceables = new BlockMatchRuleTest(Blocks.SNOW_BLOCK);
         RuleTest netherrackReplaceables = new TagMatchRuleTest(BlockTags.BASE_STONE_NETHER);
         RuleTest endstoneReplaceables = new BlockMatchRuleTest(Blocks.END_STONE);
 
@@ -76,30 +70,15 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> CelestiteOres =
                 List.of(OreFeatureConfig.createTarget(endstoneReplaceables, ModBlocks.CELESTITE_ORE.getDefaultState()));
 
-        //TERRAIN //BIOME
-        List<OreFeatureConfig.Target> overworldMagma =
-                List.of(OreFeatureConfig.createTarget(stoneReplaceables, Blocks.MAGMA_BLOCK.getDefaultState()),
-                        OreFeatureConfig.createTarget(deepslateReplaceables, Blocks.MAGMA_BLOCK.getDefaultState()));
-        List<OreFeatureConfig.Target> overworldObsidian =
-                List.of(OreFeatureConfig.createTarget(stoneReplaceables, Blocks.OBSIDIAN.getDefaultState()),
-                        OreFeatureConfig.createTarget(deepslateReplaceables, Blocks.OBSIDIAN.getDefaultState()));
-        List<OreFeatureConfig.Target> overworldCryingObsidian =
-                List.of(OreFeatureConfig.createTarget(stoneReplaceables, Blocks.CRYING_OBSIDIAN.getDefaultState()),
-                        OreFeatureConfig.createTarget(deepslateReplaceables, Blocks.CRYING_OBSIDIAN.getDefaultState()));
-
-        register(context, RUBY_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldRubyOres, 5));
+        register(context, RUBY_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldRubyOres, 4));
         register(context, COBALT_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCobaltOres, 4));
-        register(context, MYTHRIL_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldMythrilOres, 4,0.45F));
-        register(context, PHOENIXITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(NetherPhoenixiteOres, 4, 0.45F));
-        register(context, ENDERITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(EnderiteOres, 4, 0.45F));
+        register(context, MYTHRIL_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldMythrilOres, 4,0.50F));
+        register(context, PHOENIXITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(NetherPhoenixiteOres, 2, 0.75F));
+        register(context, ENDERITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(EnderiteOres, 5, 0.40F));
         register(context, ENDERITE_COAL_RUBY_ORE_KEY, Feature.ORE, new OreFeatureConfig(EnderiteCoalOres, 7));
-        register(context, CELESTITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(CelestiteOres, 6, 0.45F));
+        register(context, CELESTITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(CelestiteOres, 4, 0.70F));
 
         //TERRAIN //BIOME
-        register(context, MAGMA_KEY, Feature.ORE, new OreFeatureConfig(overworldMagma, 64));
-        register(context, OBSIDIAN_KEY, Feature.ORE, new OreFeatureConfig(overworldObsidian, 32));
-        register(context, CRYING_OBSIDIAN_KEY, Feature.ORE, new OreFeatureConfig(overworldCryingObsidian, 48));
-
         register(context, CRYSTALASPEN_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.CRYSTALASPEN_LOG),
                 new StraightTrunkPlacer(3, 5, 4),
@@ -120,7 +99,7 @@ public class ModConfiguredFeatures {
                 new TwoLayersFeatureSize(1, 0, 2)).dirtProvider(BlockStateProvider.of(Blocks.DIRT)).build());
         register(context, NIGHTSHADEGROVE_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.NIGHTSHADEGROVE_LOG),
-                new NightShadesTrunkPlacer(7, 5, 11),
+                new NightShadesTrunkPlacer(11, 8, 14),
                 BlockStateProvider.of(ModBlocks.NIGHTSHADEGROVE_LEAVES),
                 new NightShadesFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 5),
                 new TwoLayersFeatureSize(1, 0, 2)).dirtProvider(BlockStateProvider.of(Blocks.END_STONE)).build());
@@ -129,7 +108,7 @@ public class ModConfiguredFeatures {
                 new StraightTrunkPlacer(5, 7, 4),
                 BlockStateProvider.of(ModBlocks.SHADOWONYXBLOODFLAME_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
-                new TwoLayersFeatureSize(1, 0, 2)).dirtProvider(BlockStateProvider.of(Blocks.DIRT)).build());
+                new TwoLayersFeatureSize(1, 0, 2)).dirtProvider(BlockStateProvider.of(Blocks.NETHERRACK)).build());
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

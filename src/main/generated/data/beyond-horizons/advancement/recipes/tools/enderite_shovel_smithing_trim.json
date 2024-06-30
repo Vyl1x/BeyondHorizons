@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dimensional_trim": {
+    "has_selected_template": {
       "conditions": {
         "items": [
           {
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_dimensional_trim"
+      "has_selected_template"
     ]
   ],
   "rewards": {

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "beyond-horizons:item/gold_multi_tool"
+  }
+}

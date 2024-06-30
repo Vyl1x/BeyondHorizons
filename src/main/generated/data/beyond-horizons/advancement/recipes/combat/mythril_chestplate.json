@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:mythril_chestplate"
+        "recipe": "beyond-horizons:mythril_chestplate"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:mythril_chestplate"
+      "beyond-horizons:mythril_chestplate"
     ]
   }
 }

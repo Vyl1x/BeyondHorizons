@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:junglejade_door"
+        "recipe": "beyond-horizons:junglejade_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:junglejade_door"
+      "beyond-horizons:junglejade_door"
     ]
   }
 }

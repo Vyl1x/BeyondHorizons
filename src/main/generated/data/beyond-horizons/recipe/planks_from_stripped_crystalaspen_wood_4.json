@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "beyond-horizons:stripped_crystalaspen_wood"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "beyond-horizons:crystalaspen_planks"
+  }
+}

@@ -37,37 +37,33 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider{
                 .forceAddTag(BlockTags.COPPER_ORES)
                 .forceAddTag(BlockTags.COAL_ORES);
 
-        getOrCreateTagBuilder(ModTags.Blocks.LOGS)
+        getOrCreateTagBuilder(BlockTags.LOGS)
                 .add(ModBlocks.NIGHTSHADEGROVE_LOG)
                 .add(ModBlocks.JUNGLEJADE_LOG)
                 .add(ModBlocks.CRYSTALASPEN_LOG)
                 .add(ModBlocks.SHADOWONYXBLOODFLAME_LOG)
-                .add(ModBlocks.DARKFIRE_LOG)
-                .forceAddTag(BlockTags.LOGS);
+                .add(ModBlocks.DARKFIRE_LOG);
 
-        getOrCreateTagBuilder(ModTags.Blocks.PLANKS)
+        getOrCreateTagBuilder(BlockTags.PLANKS)
                 .add(ModBlocks.NIGHTSHADEGROVE_PLANKS)
                 .add(ModBlocks.JUNGLEJADE_PLANKS)
                 .add(ModBlocks.CRYSTALASPEN_PLANKS)
                 .add(ModBlocks.SHADOWONYXBLOODFLAME_PLANKS)
-                .add(ModBlocks.DARKFIRE_PLANKS)
-                .forceAddTag(BlockTags.PLANKS);
+                .add(ModBlocks.DARKFIRE_PLANKS);
 
-        getOrCreateTagBuilder(ModTags.Blocks.SLABS)
+        getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(ModBlocks.NIGHTSHADEGROVE_SLAB)
                 .add(ModBlocks.JUNGLEJADE_SLAB)
                 .add(ModBlocks.CRYSTALASPEN_SLAB)
                 .add(ModBlocks.SHADOWONYXBLOODFLAME_SLAB)
-                .add(ModBlocks.DARKFIRE_SLAB)
-                .forceAddTag(BlockTags.SLABS);
+                .add(ModBlocks.DARKFIRE_SLAB);
 
-        getOrCreateTagBuilder(ModTags.Blocks.LEAVES)
+        getOrCreateTagBuilder(BlockTags.LEAVES)
                 .add(ModBlocks.NIGHTSHADEGROVE_LEAVES)
                 .add(ModBlocks.JUNGLEJADE_LEAVES)
                 .add(ModBlocks.CRYSTALASPEN_LEAVES)
                 .add(ModBlocks.SHADOWONYXBLOODFLAME_LEAVES)
-                .add(ModBlocks.DARKFIRE_LEAVES)
-                .forceAddTag(BlockTags.LEAVES);
+                .add(ModBlocks.DARKFIRE_LEAVES);
 
         getOrCreateTagBuilder(ModTags.Blocks.MULTITOOL)
                 .forceAddTag(BlockTags.AXE_MINEABLE)
@@ -178,7 +174,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider{
                 .add(ModBlocks.DEEPSLATE_RUBY_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-
                 .add(ModBlocks.ENDERITE_COAL_BLOCK)
                 .add(ModBlocks.COBALT_BLOCK)
                 .add(ModBlocks.ENDERITE_COAL_ORE)
@@ -213,23 +208,18 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider{
                 .add(ModBlocks.NIGHTSHADEGROVE_LOG)
                 .add(ModBlocks.JUNGLEJADE_LOG)
                 .add(ModBlocks.CRYSTALASPEN_LOG)
-                .add(ModBlocks.SHADOWONYXBLOODFLAME_LOG)
                 .add(ModBlocks.DARKFIRE_LOG)
                 .add(ModBlocks.STRIPPED_NIGHTSHADEGROVE_LOG)
                 .add(ModBlocks.STRIPPED_JUNGLEJADE_LOG)
                 .add(ModBlocks.STRIPPED_CRYSTALASPEN_LOG)
-                .add(ModBlocks.STRIPPED_SHADOWONYXBLOODFLAME_LOG)
                 .add(ModBlocks.STRIPPED_DARKFIRE_LOG)
                 .add(ModBlocks.NIGHTSHADEGROVE_WOOD)
                 .add(ModBlocks.JUNGLEJADE_WOOD)
                 .add(ModBlocks.CRYSTALASPEN_WOOD)
-                .add(ModBlocks.SHADOWONYXBLOODFLAME_WOOD)
                 .add(ModBlocks.DARKFIRE_WOOD)
                 .add(ModBlocks.STRIPPED_NIGHTSHADEGROVE_WOOD)
                 .add(ModBlocks.STRIPPED_JUNGLEJADE_WOOD)
                 .add(ModBlocks.STRIPPED_CRYSTALASPEN_WOOD)
-                .add(ModBlocks.STRIPPED_SHADOWONYXBLOODFLAME_WOOD)
                 .add(ModBlocks.STRIPPED_DARKFIRE_WOOD);
     }
-
 }

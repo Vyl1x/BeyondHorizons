@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:ruby_boots"
+        "recipe": "beyond-horizons:ruby_boots"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:ruby_boots"
+      "beyond-horizons:ruby_boots"
     ]
   }
 }

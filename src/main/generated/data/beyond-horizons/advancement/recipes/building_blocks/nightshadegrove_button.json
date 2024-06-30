@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:nightshadegrove_button"
+        "recipe": "beyond-horizons:nightshadegrove_button"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:nightshadegrove_button"
+      "beyond-horizons:nightshadegrove_button"
     ]
   }
 }

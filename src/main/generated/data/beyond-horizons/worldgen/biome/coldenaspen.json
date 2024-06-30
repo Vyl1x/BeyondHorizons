@@ -65,8 +65,7 @@
       "minecraft:ore_lapis",
       "minecraft:ore_lapis_buried",
       "minecraft:ore_copper",
-      "minecraft:underwater_magma",
-      "minecraft:ore_gold_extra"
+      "minecraft:underwater_magma"
     ],
     [],
     [
@@ -101,10 +100,10 @@
     "axolotls": [],
     "creature": [
       {
-        "type": "minecraft:wolf",
-        "maxCount": 3,
-        "minCount": 1,
-        "weight": 3
+        "type": "minecraft:glow_squid",
+        "maxCount": 6,
+        "minCount": 2,
+        "weight": 6
       },
       {
         "type": "minecraft:sheep",

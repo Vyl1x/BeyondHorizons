@@ -1,9 +1,24 @@
-// 1.21	2024-06-24T03:52:05.3655598	Beyond Horizons/Tags for minecraft:item
+// 1.21	2024-06-29T22:10:16.8675255	Beyond Horizons/Tags for minecraft:item
+d22aa4001574d20afc7fc05543d1814f3eaa95a1 data\minecraft\tags\item\slabs.json
 a7c2525ebf738f86911250e225a8f042c4667cf5 data\beyond-horizons\tags\item\ores.json
-17cad99906299a55b2a8d66d67d790d0dac0d039 data\beyond-horizons\tags\item\slabs.json
+26adcb30905d1ba55558a9f4e8a8a4f7428fdc89 data\minecraft\tags\item\enchantable\durability.json
+8630293119c017117bb4090cf51e986684c5dceb data\minecraft\tags\item\enchantable\sword.json
 eeed2654db58a1146f64b45c833bd112b391e482 data\minecraft\tags\item\trimmable_armor.json
-5e81982823a644cdccb42eca0dd2d0596c9f724e data\beyond-horizons\tags\item\logs.json
+0db431c23e202baf418bd282d54ccfa4d7ddf1fa data\minecraft\tags\item\enchantable\equippable.json
+2188ab43f431bdce08ecb8152aff14e5eaf8617f data\minecraft\tags\item\enchantable\chest_armor.json
+afe913d36dd4a5e6c58c4381baefff641362e89b data\minecraft\tags\item\coals.json
+76c2fb37864eb7e053b0958098a617d6c86ce417 data\minecraft\tags\item\enchantable\weapon.json
 a119561db973442ffdfe20ad7b0ca772163dd581 data\minecraft\tags\item\logs_that_burn.json
-a9c05fdd8247d41085c49b6c9193c9487d34c909 data\minecraft\tags\item\fences.json
-36e29a5ba0cfa5546d5797e1164c5503fad3b152 data\beyond-horizons\tags\item\coals.json
-9af6fbef6ac7f44a525933709af185e49d44c5b7 data\beyond-horizons\tags\item\planks.json
+26adcb30905d1ba55558a9f4e8a8a4f7428fdc89 data\minecraft\tags\item\enchantable\vanishing.json
+ea5af0c6dff4f3d57226599ca2ca7d8d439c22e9 data\minecraft\tags\item\leaves.json
+8630293119c017117bb4090cf51e986684c5dceb data\minecraft\tags\item\enchantable\sharp_weapon.json
+0db431c23e202baf418bd282d54ccfa4d7ddf1fa data\minecraft\tags\item\enchantable\armor.json
+46743c38fe9b0c9f4b82c0ad5946d434a7f975d7 data\minecraft\tags\item\enchantable\leg_armor.json
+8630293119c017117bb4090cf51e986684c5dceb data\minecraft\tags\item\enchantable\fire_aspect.json
+0883feb0af0c635a0ccfdb7cf82687ff864ce571 data\minecraft\tags\item\enchantable\bow.json
+72f0bb5f176c59a02e5f517c702d36ba781c7199 data\minecraft\tags\item\planks.json
+ef5ee16119db0cf75ea7e3fdd0781fa8cf2bc462 data\minecraft\tags\item\enchantable\mining_loot.json
+b8682613e35593dfdf9e4b42f8ecece4648f4761 data\minecraft\tags\item\enchantable\head_armor.json
+ef5ee16119db0cf75ea7e3fdd0781fa8cf2bc462 data\minecraft\tags\item\enchantable\mining.json
+edaedafe837ea256e7f7efd238f83a0bdef4bcb6 data\minecraft\tags\item\enchantable\foot_armor.json
+bea735f1dd09cbaee1fe2ccbba1e90e669ad290d data\minecraft\tags\item\logs.json

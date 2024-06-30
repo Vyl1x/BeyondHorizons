@@ -43,16 +43,24 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModStatusEffects.EFFECT_OF_THE_TIGER, "Tiger");
 
         /** TOOLS **/
+        translationBuilder.add(ModItems.WOODEN_MULTI_TOOL, "Wooden Multi Tool");
+        translationBuilder.add(ModItems.STONE_MULTI_TOOL, "Stone Multi Tool");
+        translationBuilder.add(ModItems.GOLD_MULTI_TOOL, "Gold Multi Tool");
+        translationBuilder.add(ModItems.IRON_MULTI_TOOL, "Iron Multi Tool");
+        translationBuilder.add(ModItems.DIAMOND_MULTI_TOOL, "Diamond Multi Tool");
+        translationBuilder.add(ModItems.NETHERITE_MULTI_TOOL, "Netherite Multi Tool");
         translationBuilder.add(ModItems.RUBY_SWORD, "Ruby Sword");
         translationBuilder.add(ModItems.RUBY_AXE, "Ruby Axe");
         translationBuilder.add(ModItems.RUBY_HOE, "Ruby Hoe");
         translationBuilder.add(ModItems.RUBY_PICKAXE, "Ruby Pickaxe");
         translationBuilder.add(ModItems.RUBY_SHOVEL, "Ruby Shovel");
+        translationBuilder.add(ModItems.RUBY_MULTI_TOOL, "Ruby Multi Tool");
         translationBuilder.add(ModItems.MYTHRIL_SWORD, "Mythril Sword");
         translationBuilder.add(ModItems.MYTHRIL_AXE, "Mythril Axe");
         translationBuilder.add(ModItems.MYTHRIL_HOE, "Mythril Hoe");
         translationBuilder.add(ModItems.MYTHRIL_PICKAXE, "Mythril Pickaxe");
         translationBuilder.add(ModItems.MYTHRIL_SHOVEL, "Mythril Shovel");
+        translationBuilder.add(ModItems.MYTHRIL_MULTI_TOOL, "Mythril Multi Tool");
         translationBuilder.add(ModItems.COBALT_SWORD, "Cobalt Sword");
         translationBuilder.add(ModItems.COBALT_AXE, "Cobalt Axe");
         translationBuilder.add(ModItems.COBALT_HOE, "Cobalt Hoe");
@@ -65,16 +73,19 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.PHOENIXITE_HOE, "Phoenixite Hoe");
         translationBuilder.add(ModItems.PHOENIXITE_PICKAXE, "Phoenixite Pickaxe");
         translationBuilder.add(ModItems.PHOENIXITE_SHOVEL, "Phoenixite Shovel");
+        translationBuilder.add(ModItems.PHOENIXITE_MULTI_TOOL, "Phoenixite Multi Tool");
         translationBuilder.add(ModItems.CELESTITE_SWORD, "Celestite Sword");
         translationBuilder.add(ModItems.CELESTITE_AXE, "Celestite Axe");
         translationBuilder.add(ModItems.CELESTITE_HOE, "Celestite Hoe");
         translationBuilder.add(ModItems.CELESTITE_PICKAXE, "Celestite Pickaxe");
         translationBuilder.add(ModItems.CELESTITE_SHOVEL, "Celestite Shovel");
+        translationBuilder.add(ModItems.CELESTITE_MULTI_TOOL, "Celestite Multi Tool");
         translationBuilder.add(ModItems.ENDERITE_SWORD, "Enderite Sword");
         translationBuilder.add(ModItems.ENDERITE_AXE, "Enderite Axe");
         translationBuilder.add(ModItems.ENDERITE_HOE, "Enderite Hoe");
         translationBuilder.add(ModItems.ENDERITE_PICKAXE, "Enderite Pickaxe");
         translationBuilder.add(ModItems.ENDERITE_SHOVEL, "Enderite Shovel");
+        translationBuilder.add(ModItems.ENDERITE_MULTI_TOOL, "Enderite Multi Tool");
 
         /** ARMOR **/
         translationBuilder.add(ModItems.RUBY_HELMET, "Ruby Helmet");

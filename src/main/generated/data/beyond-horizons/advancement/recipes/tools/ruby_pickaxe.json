@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:ruby_pickaxe"
+        "recipe": "beyond-horizons:ruby_pickaxe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:ruby_pickaxe"
+      "beyond-horizons:ruby_pickaxe"
     ]
   }
 }

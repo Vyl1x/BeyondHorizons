@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:nightshadegrove_fence"
+        "recipe": "beyond-horizons:nightshadegrove_fence"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:nightshadegrove_fence"
+      "beyond-horizons:nightshadegrove_fence"
     ]
   }
 }

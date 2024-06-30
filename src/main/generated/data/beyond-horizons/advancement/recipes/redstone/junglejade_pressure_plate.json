@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:junglejade_pressure_plate"
+        "recipe": "beyond-horizons:junglejade_pressure_plate"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:junglejade_pressure_plate"
+      "beyond-horizons:junglejade_pressure_plate"
     ]
   }
 }

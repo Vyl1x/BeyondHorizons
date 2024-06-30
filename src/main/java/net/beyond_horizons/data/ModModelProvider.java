@@ -127,8 +127,18 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COBALT_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.COBALT_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.COBALT_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.RUBY_MULTI_TOOL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ENDERITE_MULTI_TOOL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PHOENIXITE_MULTI_TOOL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CELESTITE_MULTI_TOOL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.COBALT_MULTI_TOOL, Models.HANDHELD);
-
+        itemModelGenerator.register(ModItems.MYTHRIL_MULTI_TOOL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WOODEN_MULTI_TOOL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STONE_MULTI_TOOL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GOLD_MULTI_TOOL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_MULTI_TOOL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIAMOND_MULTI_TOOL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NETHERITE_MULTI_TOOL, Models.HANDHELD);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ENDERITE_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ENDERITE_CHESTPLATE));

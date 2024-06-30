@@ -33,7 +33,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:enderite_ingot"
+        "recipe": "beyond-horizons:enderite_ingot"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -48,7 +48,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:enderite_ingot"
+      "beyond-horizons:enderite_ingot"
     ]
   }
 }

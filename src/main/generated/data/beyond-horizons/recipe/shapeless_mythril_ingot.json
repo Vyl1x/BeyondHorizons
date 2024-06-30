@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "beyond-horizons:mythril_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "beyond-horizons:mythril_ingot"
+  }
+}

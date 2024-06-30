@@ -75,7 +75,7 @@ public class ModCelestiteArmorItem extends ArmorItem {
         }
         PlayerEntity player = (PlayerEntity) entity;
 
-        if (player.getEquippedStack(EquipmentSlot.HEAD).getItem() instanceof ModCelestiteArmorItem) {
+        if (player.getEquippedStack(EquipmentSlot.BODY).getItem() instanceof ModCelestiteArmorItem) {
             player.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20, 1));
         }
     }

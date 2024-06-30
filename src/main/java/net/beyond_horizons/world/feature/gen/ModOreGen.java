@@ -9,14 +9,6 @@ import net.minecraft.world.gen.GenerationStep;
 
 public class ModOreGen {
     public static void generateOres() {
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.SHADOWLANDS_BIOME),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.MAGMA_PLACED_KEY);
-
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.DARKHOTMEADOW_BIOME),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.OBSIDIAN_PLACED_KEY);
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.DARKHOTMEADOW_BIOME),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.CRYING_OBSIDIAN_PLACED_KEY);
-
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.RUBY_ORE_PLACED_KEY);
 

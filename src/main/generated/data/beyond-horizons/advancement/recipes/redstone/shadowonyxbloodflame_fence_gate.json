@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:shadowonyxbloodflame_fence_gate"
+        "recipe": "beyond-horizons:shadowonyxbloodflame_fence_gate"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:shadowonyxbloodflame_fence_gate"
+      "beyond-horizons:shadowonyxbloodflame_fence_gate"
     ]
   }
 }

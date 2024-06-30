@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:stripped_nightshadegrove_wood"
+        "recipe": "beyond-horizons:stripped_nightshadegrove_wood"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:stripped_nightshadegrove_wood"
+      "beyond-horizons:stripped_nightshadegrove_wood"
     ]
   }
 }

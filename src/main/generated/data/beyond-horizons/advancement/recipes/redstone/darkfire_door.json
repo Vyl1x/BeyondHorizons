@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:darkfire_door"
+        "recipe": "beyond-horizons:darkfire_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:darkfire_door"
+      "beyond-horizons:darkfire_door"
     ]
   }
 }

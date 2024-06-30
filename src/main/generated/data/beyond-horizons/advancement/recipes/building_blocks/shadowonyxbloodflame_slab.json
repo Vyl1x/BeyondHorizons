@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:shadowonyxbloodflame_slab"
+        "recipe": "beyond-horizons:shadowonyxbloodflame_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:shadowonyxbloodflame_slab"
+      "beyond-horizons:shadowonyxbloodflame_slab"
     ]
   }
 }

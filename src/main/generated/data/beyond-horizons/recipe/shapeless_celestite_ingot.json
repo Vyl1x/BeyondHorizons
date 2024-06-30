@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "beyond-horizons:celestite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "beyond-horizons:celestite_ingot"
+  }
+}

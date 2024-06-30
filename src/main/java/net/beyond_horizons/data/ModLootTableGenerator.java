@@ -107,7 +107,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.DEEPSLATE_COBALT_ORE, this.oreDrops(ModBlocks.DEEPSLATE_COBALT_ORE, ModItems.COBALT_INGOT));
         this.addDrop(ModBlocks.MYTHRIL_ORE, this.oreDrops(ModBlocks.MYTHRIL_ORE, ModItems.MYTHRIL_INGOT));
         this.addDrop(ModBlocks.DEEPSLATE_MYTHRIL_ORE, this.oreDrops(ModBlocks.DEEPSLATE_MYTHRIL_ORE, ModItems.MYTHRIL_INGOT));
-        this.addDrop(ModBlocks.CELESTITE_ORE, this.oreDrops(ModBlocks.ENDERITE_ORE, ModItems.RAW_CELESTITE));
+        this.addDrop(ModBlocks.CELESTITE_ORE, this.oreDrops(ModBlocks.CELESTITE_ORE, ModItems.RAW_CELESTITE));
         this.addDrop(ModBlocks.ENDERITE_COAL_ORE, this.oreDrops(ModBlocks.ENDERITE_COAL_ORE, ModItems.ENDERITE_COAL));
 
         /** ORES v2 **/

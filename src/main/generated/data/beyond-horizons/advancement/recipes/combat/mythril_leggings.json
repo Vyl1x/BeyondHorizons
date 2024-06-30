@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:mythril_leggings"
+        "recipe": "beyond-horizons:mythril_leggings"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:mythril_leggings"
+      "beyond-horizons:mythril_leggings"
     ]
   }
 }
